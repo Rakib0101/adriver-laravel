@@ -1,0 +1,325 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .update-link {
+    @apply px-4 text-primary-500 underline block py-2 mb-2 bg-gray-50;
+  }
+
+  .footer-link {
+    @apply transition-all duration-300 text-base font-medium border-b-2 border-white;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.update-link {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.update-link:hover {
+  color: #235e06;
+}
+
+.footer-link:hover {
+  border-color: #58B32B;
+}
+
+body {
+  font-family: 'IBM Plex Sans';
+}
+
+.custom-checkbox input,
+.custom-radio input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.custom-checkbox label,
+.custom-radio label {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  color: #4D554B;
+}
+
+.custom-checkbox label::before {
+  content: '';
+  -webkit-appearance: none;
+  background: #FFFFFF;
+  border: 2px solid #DEE6DC;
+  border-radius: 4px;
+  min-width: 20px;
+  height: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.custom-radio label::before {
+  content: '';
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: 2px solid #DEE6DC;
+  border-radius: 44px;
+}
+
+.custom-checkbox label::before:hover {
+  border: 2px solid #58B32B !important;
+}
+
+.custom-checkbox input:checked+label::before {
+  content: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.3334 1L5.00008 8.33333L1.66675 5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-color: #58B32B;
+  border: 2px solid #58B32B;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-radio input:checked+label::before {
+  background-color: white;
+  border: 6px solid #58B32B;
+}
+
+.custom-checkbox input:checked+label,
+.custom-radio input:checked+label {
+  color: #171E15;
+}
+
+.lang-dropdown,
+.curr-dropdown {
+  display: inline-flex;
+  position: relative;
+}
+
+.dropdown-item {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  padding: 12px 0px;
+  border-radius: 6px;
+  border: 1px solid #DEE5DC;
+  background: white;
+  box-shadow: 0px 12px 32px 0px rgba(23, 30, 21, 0.08);
+  z-index: 999;
+}
+
+.dropdown-item li a,
+.cat-dropdown-item li a {
+  display: flex;
+  padding: 8px 18px;
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #4D554B;
+}
+
+.dropdown-item li a:hover,
+.cat-dropdown-item li a:hover {
+  background-color: #F3F5F2;
+}
+.cat-dropdown-item {
+  position: absolute;
+  left: 0;
+  top: calc(100% - 8px);
+  transform: translateY(-20px);
+  visibility: hidden;
+  opacity: 0;
+  padding: 8px 0px;
+  border-radius: 8px;
+  border: 1px solid #DEE5DC;
+  background: white;
+  box-shadow: 0px 12px 32px 0px rgba(23, 30, 21, 0.08);
+  width: 200px;
+  z-index: 999999;
+  transition: all 0.4s ease-in;
+}
+
+.cat-item:hover .cat-dropdown-item {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+  z-index: 99999;
+}
+
+.cat-item:hover>a {
+  color: #58B32B;
+}
+
+.cat-swiper .swiper-slide {
+  z-index: 1;
+  max-width: max-content !important;
+}
+
+/* hero section */
+
+
+
+/* header search */
+.header-search:has(input:focus) {
+    border: 1px solid #58B32B;
+    opacity: 0.9;
+    box-shadow: 0px 8px 24px 0px rgba(88, 179, 43, 0.12);
+}
+
+/* popup css */
+.popup-title {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.unread {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.popup {
+  box-shadow: 0px 12px 32px rgba(23, 30, 21, 0.08);
+  border-radius: 10px;
+}
+
+/* footer extra css */
+@media (min-width: 640px) {
+  .ads-category-list {
+    webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+.ads-category-list li a {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+
+/* category card extra css */
+.category-card {
+  transition: all 0.5s ease-in-out;
+}
+
+.category-card:hover {
+  background-color: #F3F5F2;
+  cursor: pointer;
+}
+
+.category-card img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.category-card:hover .info {
+  background-color: #58B32B;
+  color: white;
+}
+
+/* listing card css */
+.listing-card {
+  background-color: white;
+}
+
+.listing-card.featured {
+  background: linear-gradient(180deg, #fbe7d2 0%, #fdf4e9 100%);
+}
+
+.listing-card:hover,
+.listing-card.featured:hover {
+  box-shadow: 0px 12px 32px rgba(23, 30, 21, 0.12);
+}
+
+.listing-card:hover .cardTitle {
+  color: #58b32b;
+}
+
+.listing-card:hover .img {
+  transform: scale(120%);
+  border-radius: 4px;
+}
+.grid-card:hover,
+.grid-card.featured:hover {
+  box-shadow: 0px 12px 32px rgba(23, 30, 21, 0.12);
+}
+
+.grid-card.featured {
+  background: linear-gradient(180deg, #fbe7d2 0%, #fdf4e9 100%);
+}
+
+.grid-card:hover .cardTitle {
+  color: #58b32b;
+}
+
+.grid-card:hover .img {
+  transform: scale(120%);
+}
+
+/* location card extra css */
+.location-card:hover img {
+  transform: scale(1.05);
+}
+
+.location-card::after {
+  content: '';
+  display: block;
+  background-color: rgba(0, 0, 0, 0.48);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.location-card:hover::after {
+  visibility: visible;
+}
+
+.location-card .count {
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  transition: all .5s ease-in;
+}
+
+.location-card:hover .count {
+  transition: all .5s ease-out;
+}
+
+.location-card:hover .count {
+  background-color: #58B32B;
+  color: #fff;
+}
