@@ -3,7 +3,6 @@
 @section('content')
     <x-frontend.breadcrumb.breadcrumb-view title="Browse Listing" url="/" label="Home" />
     <div class="container py-[50px] pb-[50px] sm:pb-0" x-data="data">
-        <span x-text="isGrid"></span>
         <x-frontend.filter.search-filter />
         <div class="grid lg:grid-flow-col xl:grid-cols-4 grid-cols-3 gap-6">
             <div class="col-span-1 hidden lg:block">
@@ -27,7 +26,7 @@
                     </div>
                 </Transition>
                 <div>
-                    <pagination-view />
+                    <x-frontend.pagination.pagination-view />
                 </div>
             </div>
         </div>

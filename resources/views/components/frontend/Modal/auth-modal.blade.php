@@ -65,11 +65,11 @@
                             class="flex w-full h-12 py-3 px-[18px] outline-none border border-gray-100 shadow-[0px_3px_14px_rgba(23,30,21,0.02)] rounded-md focus:border-primary-500 focus:shadow-[0px_8px_24px_rgba(88,179,43,0.12)]" />
                         <label for="password" class="absolute top-3 right-4" x-show="eyeOff"
                             @click="eyeOn = true; eyeOff = false">
-                            <x-bi-eye class="w-6 h-6" />
+                            <i class="ph ph-eye text-2xl leading-6"></i>
                         </label>
                         <label for="password" class="absolute top-3 right-4" x-show="eyeOn"
                             @click="eyeOn = false; eyeOff = true">
-                            <x-bi-eye-slash class="w-6 h-6" />
+                            <i class="ph ph-eye-closed text-2xl leading-6"></i>
                         </label>
                     </div>
                 </div>
@@ -130,11 +130,11 @@
                             class="flex w-full h-12 py-3 px-[18px] outline-none border border-gray-100 shadow-[0px_3px_14px_rgba(23,30,21,0.02)] rounded-md focus:border-primary-500 focus:shadow-[0px_8px_24px_rgba(88,179,43,0.12)]" />
                         <label for="password" class="absolute top-3 right-4" x-show="eyeOff"
                             @click="eyeOn = true; eyeOff = false">
-                            <x-bi-eye class="w-6 h-6" />
+                            <i class="ph ph-eye text-2xl leading-6"></i>
                         </label>
                         <label for="password" class="absolute top-3 right-4" x-show="eyeOn"
                             @click="eyeOn = false; eyeOff = true">
-                            <x-bi-eye-slash class="w-6 h-6" />
+                            <i class="ph ph-eye-closed text-2xl leading-6"></i>
                         </label>
                     </div>
                 </div>
@@ -145,11 +145,11 @@
                             class="flex w-full h-12 py-3 px-[18px] outline-none border border-gray-100 shadow-[0px_3px_14px_rgba(23,30,21,0.02)] rounded-md focus:border-primary-500 focus:shadow-[0px_8px_24px_rgba(88,179,43,0.12)]" />
                         <label for="cpassword" class="absolute top-3 right-4" x-show="ceyeOff"
                             @click="ceyeOn = true; ceyeOff = false">
-                            <x-bi-eye class="w-6 h-6" />
+                            <i class="ph ph-eye text-2xl leading-6"></i>
                         </label>
                         <label for="cpassword" class="absolute top-3 right-4" x-show="ceyeOn"
                             @click="ceyeOn = false; ceyeOff = true">
-                            <x-bi-eye-slash class="w-6 h-6" />
+                            <i class="ph ph-eye-closed text-2xl leading-6"></i>
                         </label>
                     </div>
                 </div>
@@ -178,7 +178,7 @@
         <!--End Sign-Up Section -->
 
         <button class="absolute right-3 top-3" @click="showModal = false">
-            <x-bi-x class="w-6 h-6" />
+            <i class="ph ph-x text-2xl leading-6"></i>
         </button>
     </div>
 </div>

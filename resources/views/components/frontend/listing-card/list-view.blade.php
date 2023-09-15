@@ -25,7 +25,7 @@
         <div class="h-full flex flex-col gap-6 justify-between lg:py-6 lg:pr-6 lg:pl-0 p-3 lg:border-r lg:border-b-0 md:border-b border-gray-100">
             <div>
                 <p class="flex items-center md:gap-1.5 gap-1 uppercase text-blue-500 lg:text-sm text-[11px] leading-[100%] font-semibold font-display lg:mb-1.5 mb-0.5">
-                    <x-bi-tag class="lg:w-[13.17px] w-3.5 lg:h-[13.17px] h-3.5" />
+                    <i class="ph ph-tag lg:w-[13.17px] w-3.5 lg:h-[13.17px] h-3.5"></i>
                     Want to buy
                 </p>
                 <h2 class="text-gray-900 lg:text-base text-sm lg:font-semibold font-medium font-display lg:mb-1.5 mb-1 line-clamp-2 cardTitle transition-colors duration-300">

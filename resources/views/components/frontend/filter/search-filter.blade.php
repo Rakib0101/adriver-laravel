@@ -33,19 +33,11 @@ export default {
 </script> --}}
 
   <div class="mb-6">
-    <div
-      for="search-filter"
-      :class="
-        isFocused
-          ? 'shadow-[0px_8px_24px_rgba(88,179,43,0.12)] border border-primary-500'
-          : 'shadow-[0px_3px_14px_rgba(23,30,21,0.03)] border border-gray-100'
-      "
-      class="lg:shadow-[0px_12px_32px_rgba(23,30,21,0.05)] rounded-lg lg:py-[11px] lg:pr-3 lg:pl-1 flex justify-between flex-col mb-5"
-    >
+    <label for="search-filter" class="search-filter-wrap lg:shadow-[0px_12px_32px_rgba(23,30,21,0.05)] rounded-lg lg:py-[11px] lg:pr-3 lg:pl-1 flex justify-between flex-col mb-5 shadow-[0px_3px_14px_rgba(23,30,21,0.03)] border border-gray-100">
       <div class="flex justify-between lg:border-none border-b border-gray-100">
         <div class="relative lg:flex hidden lg:max-w-[456px] w-full">
           <label for="search-filter" class="absolute top-3 left-[18px]">
-            <x-bi-search  class="w-6 h-6"/>
+            <i class="ph ph-magnifying-glass text-2xl leading-6"></i>
           </label>
           <input
             type="text"
@@ -59,17 +51,16 @@ export default {
         <div
           class="relative lg:flex hidden items-center lg:max-w-[312px] w-full border-r border-l border-gray-100 px-[18px]"
         >
-          <tag-icon />
-          <Multiselect
-            class="list-type"
-            placeholder="Listing type"
-            v-model="value"
-            :options="options"
-          />
+          <i class="ph ph-tag text-2xl leading-6"></i>
+          <select name="" id="" class="relative !w-full filter-select select2">
+            <option value="">I want to buy</option>
+            <option value="">I want to sell</option>
+            <option value="">I want to exchange</option>
+          </select>
         </div>
         <div class="relative lg:max-w-[272px] w-full rounded-lg">
           <label for="location-input" class="absolute top-3 left-[18px]">
-            <location-icon />
+            <x-bi-geo-alt class="w-6 h-6" />
           </label>
           <input
             type="text"
@@ -123,7 +114,7 @@ export default {
           :options="options"
         />
       </div>
-    </div>
+    </label>
     <div>
       <p
         class="lg:flex hidden gap-2 text-gray-900 text-sm font-medium scrollbar-hide overflow-x-auto"

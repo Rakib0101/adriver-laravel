@@ -139,7 +139,7 @@
                             class="inline-block border hover:shadow-[0px_8px_24px_rgba(23,30,21,0.04)] hover:border-primary-500 hover:bg-primary-50 transition-all duration-300 border-gray-100 rounded-md font-semibold text-gray-500 hover:text-primary-500 py-3 px-[18px]">
                             <div class="tag flex items-center gap-1">
                                 <span class="text-primary-500 inline-flex">
-                                    <x-bi-tag class="w-5" />
+                                    <i class="ph ph-tag text-xl leading-5"></i>
                                 </span>
                                 <p class="uppercase text-xs font-semibold text-primary-500">
                                     For Sale
@@ -155,7 +155,7 @@
                             class="inline-block border hover:shadow-[0px_8px_24px_rgba(23,30,21,0.04)] hover:border-primary-500 hover:bg-primary-50 transition-all duration-300 border-gray-100 rounded-md font-semibold text-gray-500 hover:text-primary-500 py-3 px-[18px]">
                             <div class="tag flex items-center gap-1">
                                 <span class="text-blue-500 inline-flex">
-                                    <x-bi-tag class="w-5" />
+                                    <i class="ph ph-tag text-xl leading-5"></i>
                                 </span>
                                 <p class="uppercase font-semibold text-danger-500"></p>
                                 <p class="uppercase text-xs font-semibold text-blue-500">
@@ -172,7 +172,7 @@
                             class="inline-block border border-gray-100 hover:shadow-[0px_8px_24px_rgba(23,30,21,0.04)] hover:border-primary-500 hover:bg-primary-50 transition-all duration-300 rounded-md font-semibold text-gray-500 hover:text-primary-500 py-3 px-[18px]">
                             <div class="tag flex items-center gap-1">
                                 <span class="text-danger-500 inline-flex">
-                                    <x-bi-tag class="w-5" />
+                                    <i class="ph ph-tag text-xl leading-5"></i>
                                 </span>
                                 <p class="uppercase text-xs font-semibold text-danger-500">
                                     For Exchange

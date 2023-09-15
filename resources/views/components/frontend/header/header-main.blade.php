@@ -27,7 +27,7 @@
                         <input type="text" id="search-input" placeholder="Search for anything..."
                             class="pl-[54px] block w-full focus:outline-none" />
                         <label class="absolute top-1/2 transform -translate-y-1/2 left-[18px]" for="search-input">
-                            <x-bi-search class="w-5 h-5" />
+                            <i class="ph ph-magnifying-glass text-xl leading-5"></i>
                         </label>
                     </div>
                 </label>

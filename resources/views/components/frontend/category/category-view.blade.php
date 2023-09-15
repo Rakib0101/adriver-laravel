@@ -64,7 +64,7 @@
         <div class="flex justify-center items-center">
             <x-frontend.button.outline-primary href="'/browse-listing'">
                 <span>
-                    <x-bi-search class="w-6 h-6"/>
+                    <i class="ph ph-magnifying-glass text-2xl leading-6"></i>
                 </span>
                 <span>Browse listing</span>
             </x-frontend.button.outline-primary>

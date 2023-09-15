@@ -39,14 +39,14 @@
         <div class="md:px-6 px-3 md:py-4 pt-3 pb-2">
             <p class="flex md:items-center gap-1.5 uppercase text-blue-500 sm:text-sm text-[11px] leading-[100%] font-semibold font-display sm:mb-1.5 sm-0.5">
                 @if($forSell)
-                    <x-bi-tag class="w-3.5 h-3.5 text-primary-500" />
+                    <i class="ph ph-tag w-3.5 h-3.5 text-primary-500"></i>
                     <span class="text-[#58B32B]">For Sell</span>
                 @elseif($forXchange)
-                <x-bi-tag class="w-3.5 h-3.5 text-danger-500" />
-                <span class="text-danger-500">For Exchange</span>
+                    <i class="ph ph-tag w-3.5 h-3.5 text-danger-500"></i>
+                    <span class="text-danger-500">For Exchange</span>
                 @else
-                <x-bi-tag class="w-3.5 h-3.5 text-blue-500" />
-                <span class="text-blue-500">Want To Buy</span>
+                    <i class="ph ph-tag w-3.5 h-3.5 text-blue-500"></i>
+                    <span class="text-blue-500">Want To Buy</span>
                 @endif
             </p>
             <h2
