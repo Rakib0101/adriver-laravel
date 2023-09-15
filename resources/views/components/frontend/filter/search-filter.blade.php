@@ -1,4 +1,4 @@
-<script>
+{{-- <script>
 import SearchLg from "../Icons/SearchLg.vue";
 import LocationIcon from "../Icons/LocationIcon.vue";
 import TagIcon from "../Icons/TagIcon.vue";
@@ -30,8 +30,8 @@ export default {
     };
   },
 };
-</script>
-<template>
+</script> --}}
+
   <div class="mb-6">
     <div
       for="search-filter"
@@ -45,7 +45,7 @@ export default {
       <div class="flex justify-between lg:border-none border-b border-gray-100">
         <div class="relative lg:flex hidden lg:max-w-[456px] w-full">
           <label for="search-filter" class="absolute top-3 left-[18px]">
-            <search-lg />
+            <x-bi-search  class="w-6 h-6"/>
           </label>
           <input
             type="text"
@@ -212,5 +212,3 @@ export default {
       </p>
     </div>
   </div>
-</template>
-<style scoped></style>

@@ -144,6 +144,7 @@ body {
 .cat-dropdown-item li a:hover {
   background-color: #F3F5F2;
 }
+
 .cat-dropdown-item {
   position: absolute;
   left: 0;
@@ -183,9 +184,9 @@ body {
 
 /* header search */
 .header-search:has(input:focus) {
-    border: 1px solid #58B32B;
-    opacity: 0.9;
-    box-shadow: 0px 8px 24px 0px rgba(88, 179, 43, 0.12);
+  border: 1px solid #58B32B;
+  opacity: 0.9;
+  box-shadow: 0px 8px 24px 0px rgba(88, 179, 43, 0.12);
 }
 
 /* popup css */
@@ -268,6 +269,7 @@ body {
   transform: scale(120%);
   border-radius: 4px;
 }
+
 .grid-card:hover,
 .grid-card.featured:hover {
   box-shadow: 0px 12px 32px rgba(23, 30, 21, 0.12);
@@ -323,3 +325,45 @@ body {
   background-color: #58B32B;
   color: #fff;
 }
+
+
+/* overlay css */
+.lang-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #171e15;
+  opacity: 0.8;
+  z-index: 97;
+}
+
+/* select2 css */
+.select2-container{
+    display: block;
+}
+.sorting-select+.select2-container .select2-selection--single,
+.sorting-select+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 45px !important;
+}
+.sorting-select+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 45px;
+}
+
+/* responsive css */
+
+@media (max-width: 375px) {
+  .logo-text {
+    display: none;
+  }
+
+  .footer-mbl {
+    padding: 12px 0px;
+  }
+}
+
+
+
+
+

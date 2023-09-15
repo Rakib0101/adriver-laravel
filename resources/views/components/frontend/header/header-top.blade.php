@@ -31,11 +31,14 @@
                       <ul class="dropdown-item w-[200px] max-w-[200px]" @click.outside="isDropdown = false"
                           x-show="isDropdown">
                           <li><a href="#" class="inline-flex items-center gap-2"><span
-                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-show="true" /></span> English</a></li>
+                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-show="true" /></span> English</a>
+                          </li>
                           <li><a href="#" class="inline-flex items-center gap-2"><span
-                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-show="false" /></span> Bangla</a></li>
+                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-show="false" /></span> Bangla</a>
+                          </li>
                           <li><a href="#" class="inline-flex items-center gap-2"><span
-                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-show="false" /></span> Arabic</a></li>
+                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-show="false" /></span> Arabic</a>
+                          </li>
                       </ul>
                   </div>
                   <div class="curr-dropdown" x-data="{ isDropdown: false }">

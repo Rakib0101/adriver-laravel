@@ -7,7 +7,7 @@
     <div class="sm:hidden block">
         <x-frontend.header.mobile-top />
         <x-frontend.header.mobile-bottom />
-        <x-frontend.header.mobile-menu />
-        <x-frontend.header.user-menu />
+        {{-- <x-frontend.header.mobile-menu /> --}}
+        {{-- <x-frontend.header.user-menu /> --}}
     </div>
 </div>

@@ -1,4 +1,4 @@
-<div class="w-[300px] sm:w-[380px] bg-white text-start max-h-[556px] overflow-y-auto scrollbar-hide rounded-lg border border-gray-100 absolute top-14 z-[99] left-1/2 -translate-x-1/2" @click.outside="showBell = false">
+<div class="w-[300px] sm:w-[380px] bg-white text-start max-h-[556px] overflow-y-auto scrollbar-hide rounded-lg border border-gray-100 absolute top-14 z-[99] left-1/2 -translate-x-1/2" x-data="{isBell:false, isUnread: false}" @click.outside="showBell = false">
     <h2 class="p-6 pb-3 popup-title">Notifications <span x-show="!isBell" class="unread text-gray-500">(3 Unread
             messages)</span>
 
