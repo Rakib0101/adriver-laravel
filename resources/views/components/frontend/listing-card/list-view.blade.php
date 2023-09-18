@@ -1,5 +1,5 @@
 @props(['isFeatured' => false, 'isTop' => false, 'isUrgent' => false, 'isSlide' => false, 'isFavorite' => false, 'forSell' => false, 'forXchange'=> false])
-<a href="/listing-details"
+<a href="/ad-details"
     class="listing-card border block lg:min-h-[230px] border-gray-100 shadow-[0px_8px_24px_rgba(23,30,21,0.04)] rounded-lg min-w-[305px] md:max-w-[380px] lg:max-w-max relative z-0 transition-all duration-300 {{ $isFeatured ? 'featured' : '' }}">
     <div class="lg:grid lg:grid-cols-3 flex items-center lg:gap-6 h-full">
         <div class="relative overflow-hidden rounded-md border-4 {{ $isTop ? 'border-[#1F85E2]' : 'border-transparent' }}">

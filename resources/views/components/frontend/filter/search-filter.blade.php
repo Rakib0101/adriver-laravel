@@ -78,14 +78,10 @@ export default {
           </label>
         </div>
         <div class="flex gap-3 items-center">
-          <router-link
-            v-if="!mapFilter"
-            to="/map-browse-listing"
-            class="inline-flex gap-2 items-center max-h-12 px-5 bg-transparent hover:bg-gray-50 transition-all duration-300 text-gray-900 text-base leading-[48px] lg:border-2 rounded-md border-gray-900"
-          >
-            <map-icon />
+          <a href="/map-browse-listing" class="inline-flex gap-2 items-center max-h-12 px-5 bg-transparent hover:bg-gray-50 transition-all duration-300 text-gray-900 text-base leading-[48px] lg:border-2 rounded-md border-gray-900">
+            <i class="ph-bold ph-map-trifold text-2xl leading-6"></i>
             <span>Map</span>
-          </router-link>
+          </a>
           <button
             class="lg:inline-flex hidden gap-2 text-white max-h-12 text-base leading-[48px] rounded-md items-center px-5 bg-primary-500 hover:bg-primary-700 transition-all duration-300"
           >

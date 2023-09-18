@@ -1,6 +1,8 @@
-<template>
-  <all-activity v-if="allActivity"/>
-  <div class="pt-12" v-if="!allActivity">
+<div x-data="{ allActivity: false }">
+    <template x-show="allActivity">
+        <x-frontend.dashboard.all-activity />
+    </template>
+  <div class="pt-12" x-show="!allActivity">
     <div class="container">
       <h2 class="text-2xl text-gray-900 font-display font-semibold mb-6">
         Hey, Rnix point
@@ -132,9 +134,9 @@
       <ListingTable title="Active Listings" />
     </div>
   </div>
-</template>
+</div>
 
-<script>
+{{-- <script>
   import ActiveListing from "../Icons/Profile/ActiveListing.vue";
   import TotalListing from "../Icons/Profile/TotalListing.vue";
   import TotalFavourite from "../Icons/Profile/TotalFavourite.vue";
@@ -179,7 +181,7 @@
       };
     },
   };
-</script>
+</script> --}}
 
 <style>
   .my-chart svg {

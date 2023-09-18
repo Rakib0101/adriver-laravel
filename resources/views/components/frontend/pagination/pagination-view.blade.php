@@ -12,9 +12,6 @@
                 </button>
             </div>
         </template>
-        {{-- <pagination-number v-for="item of 3" :key="item" class="block md:hidden">
-        {{ $item }}
-      </pagination-number> --}}
     </div>
     <button class="pagination-left-arrow cursor-pointer max-h-12 max-w-12 hover:bg-primary-50 inline-flex justify-center items-center p-2.5 rounded-md border-2 border-primary-500 hover:border-primary-700 text-primary-500 hover:text-primary-700 transition-all duration-300">
         <i class="ph-bold ph-arrow-right text-2xl leading-6"></i>

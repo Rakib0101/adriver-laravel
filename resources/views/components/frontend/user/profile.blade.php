@@ -1,19 +1,13 @@
-<template>
-  <div
-    class="sm:max-w-[312px] w-full mt-24 border border-gray-100 rounded-lg shadow-[0px_8px_24px_rgba(23,30,21,0.04)]"
-  >
+@props(['isUserOwn' => false])
+  <div class="sm:max-w-[312px] w-full mt-24 border border-gray-100 rounded-lg shadow-[0px_8px_24px_rgba(23,30,21,0.04)]">
     <div class="px-8 border-b border-gray-100">
       <div class="w-[172px] h-[172px] rounded-full mx-auto -mt-[86px] mb-6">
-        <img :src="SellerProfile" alt="" class="w-full h-full object-cover" />
+        <img src="{{ asset('frontend/assets/images/img/seller-profile.png') }}" alt="" class="w-full h-full object-cover" />
       </div>
-      <h2
-        class="flex items-center gap-2 mb-1.5 justify-center text-gray-900 text-2xl font-display font-semibold"
-      >
+      <h2 class="flex items-center gap-2 mb-1.5 justify-center text-gray-900 text-2xl font-display font-semibold">
         Rnix point <div class="tooltip"><blue-badge /> <span class="tooltiptext">Profile is verfied by adriver</span></div>
       </h2>
-      <p
-        class="flex gap-1.5 justify-center mb-1.5 items-center text-gray-900 text-sm font-semibold font-display"
-      >
+      <p class="flex gap-1.5 justify-center mb-1.5 items-center text-gray-900 text-sm font-semibold font-display">
         <icon-star /> 4.8 Star Rating
         <span class="text-gray-500">(7 Reviews)</span>
       </p>
@@ -21,9 +15,7 @@
         Member since October, 2021
       </p>
       <div class="flex justify-center mb-8">
-        <div
-          class="bg-primary-50 rounded inline-flex items-center gap-1 py-1 px-3 font-display"
-        >
+        <div class="bg-primary-50 rounded inline-flex items-center gap-1 py-1 px-3 font-display">
           <file-check />
           <span class="text-base font-semibold text-gray-900">34</span>
           <span class="text-sm text-gray-700"> Total Sold</span>
@@ -31,9 +23,7 @@
       </div>
     </div>
     <div class="p-8 border-b border-gray-100">
-      <p
-        class="flex mb-4 items-center text-2xl text-warning-500 font-semibold font-display"
-      >
+      <p class="flex mb-4 items-center text-2xl text-warning-500 font-semibold font-display">
         <span><star-large /></span>
         <span><star-large /></span>
         <span><star-large /></span>
@@ -93,7 +83,7 @@
           </div>
         </li>
       </ul>
-      <div v-if="!isSeller">
+      <div x-show="!isUserOwn">
         <button
         @click="isWriteReview = !isWriteReview"
           class="text-base bg-warning-500 px-5 rounded-md leading-[48px] text-white font-semibold font-display"

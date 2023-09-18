@@ -11,7 +11,7 @@
             <div class="col-span-3">
                 <x-frontend.filter.category-filter />
                 <Transition name="fade">
-                    <div class="grid md:grid-cols-2 lg:grid-cols-1 2xl:flex 2xl:flex-col gap-6 mb-6" x-show="!isGrid">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-1 2xl:flex 2xl:flex-col gap-6 mb-6" x-show="isList">
                         <template x-for="item in 6" :key="item">
                             <x-frontend.listing-card.list-view class="mx-auto" />
                         </template>

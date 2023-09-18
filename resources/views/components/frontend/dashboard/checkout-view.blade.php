@@ -1,4 +1,4 @@
-<template>
+
   <div>
     <div class="container">
       <div class="max-w-[872px] mx-auto">
@@ -138,8 +138,8 @@
       </div>
     </div>
   </div>
-</template>
-<script setup>
+
+{{-- <script setup>
   import PaymentPlan from "../Icons/Dashboard/PaymentPlan.vue";
   import ChangePlan from "../Icons/Dashboard/ChangePlan.vue";
   import PaymentMethod01 from "../../assets/images/img/payment-method-01.png";
@@ -162,7 +162,7 @@
       default: false,
     },
   });
-</script>
+</script> --}}
 <style>
   .payment-box input:checked+.payment-method {
     background: #eef7ea;

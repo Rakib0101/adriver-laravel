@@ -1,4 +1,4 @@
-<template>
+
   <div class="pt-12">
     <div class="container">
       <div class="border border-gray-100 shadow-[0px_8px_24px_rgba(23,30,21,0.04)] rounded-xl py-6">
@@ -96,9 +96,9 @@
       </div>
     </div>
   </div>
-</template>
 
-<script>
+
+{{-- <script>
   import active01 from "../../assets/images/img/active-list-01.png";
   import active02 from "../../assets/images/img/active-list-02.png";
   import active03 from "../../assets/images/img/active-list-03.png";
@@ -132,7 +132,7 @@
       }
     }
   }
-</script>
+</script> --}}
 <style>
   .favourite-heart:hover {
     background: #58b32b;

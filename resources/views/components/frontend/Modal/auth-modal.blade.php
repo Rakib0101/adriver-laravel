@@ -1,4 +1,4 @@
-<div class="popup-overlay" x-show="showModal" x-data="{
+<div class="popup-overlay" x-cloak x-show="showModal" x-data="{
     phoneLogin: true,
     emailLogin: false,
     isForget: false,
@@ -13,7 +13,7 @@
 }">
     <div class="relative w-full max-w-[488px] bg-white rounded-xl m-auto p-8" @click.outside="showModal = false">
         <!-- Sign-In Section -->
-        <div x-show="signIn">
+        <div x-cloak x-show="signIn">
             <h2 class="text-gray-900 text-center mb-3 text-2xl font-display font-semibold uppercase">
                 Sign in to your account
             </h2>

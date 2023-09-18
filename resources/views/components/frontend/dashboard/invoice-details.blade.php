@@ -1,4 +1,4 @@
-<template>
+
   <div class="invoice" size="A4">
     <div class="invoice-header">
       <div class="container">
@@ -129,13 +129,13 @@
       </div>
     </div>
   </div>
-</template>
 
-<script setup>
+
+{{-- <script setup>
   import PrimaryButton from "../Button/PrimaryButton.vue";
   import DownloadIcon from "../Icons/Dashboard/DownloadIcon.vue";
   import LogoIcon from "../Icons/Dashboard/LogoIcon.vue";
-</script>
+</script> --}}
 
 <style>
   @media (max-width: 991px) {

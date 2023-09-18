@@ -1,5 +1,5 @@
-<template>
-  <div class="pt-12">
+
+  {{-- <div class="pt-12">
     <div class="container">
       <div class="mb-6 flex justify-between items-center">
         <h2 class="text-2xl text-gray-900 font-display font-semibold">
@@ -239,9 +239,9 @@
         </div>
       </div>
     </div>
-  </div>
-</template>
-<script>
+  </div> --}}
+
+{{-- <script>
   import MessageCheck from "../Icons/Dashboard/MessageCheck.vue";
   import FilterLines from "../Icons/Dashboard/FilterLines.vue";
   import SearchIcon from "../Icons/Dashboard/SearchIcon.vue";
@@ -403,7 +403,7 @@
       };
     },
   };
-</script>
+</script> --}}
 <style>
   .msgFilter.active {
     color: #58b32b;

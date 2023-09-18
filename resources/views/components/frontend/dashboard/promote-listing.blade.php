@@ -1,4 +1,4 @@
-<template>
+
   <div class="max-w-[872px] z-[100] mx-auto p-8 bg-gray-50 rounded-xl fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
     <h2
       class="text-2xl text-gray-900 mb-2 font-display font-normal w-full truncate"
@@ -72,8 +72,8 @@
     </div>
   </div>
   <div class="fixed z-[90] top-0 left-0 w-full h-full bg-[rgba(23,30,21,0.8)]" @click="overlayClick"></div>
-</template>
-<script>
+
+{{-- <script>
 import PrimaryButton from '../Button/PrimaryButton.vue';
 import ButtonArrow from '../Icons/ButtonArrow.vue';
 
@@ -81,14 +81,14 @@ export default{
     components:{
       ButtonArrow,
       PrimaryButton
-    }, 
+    },
     methods:{
       overlayClick(){
         this.$emit('checkClick', true);
       }
     }
 }
-</script>
+</script> --}}
 
 <style>
 .custom-checkbox input:checked+.promote-listing{

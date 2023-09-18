@@ -22,3 +22,16 @@ Route::get('/home', function () {
 Route::get('/browse-listing', function () {
     return view('frontend.browse-listing');
 });
+
+Route::get('/map-browse-listing', function () {
+    return view('frontend.map-browse-listing');
+});
+Route::get('/ad-details', function () {
+    return view('frontend.ad-details');
+});
+Route::get('/user-profile', function () {
+    return view('frontend.user-profile');
+});
+Route::get('/user-dashboard', function () {
+    return view('frontend.user-dashboard');
+});

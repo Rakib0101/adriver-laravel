@@ -1,4 +1,4 @@
-<template>
+
   <div>
     <div class="container">
       <div class="py-12 border-b border-gray-100">
@@ -239,8 +239,8 @@
       </div>
     </div>
   </div>
-</template>
-<script>
+
+{{-- <script>
   import UploadProfile from "../Icons/Dashboard/UploadProfile.vue";
   import PrimaryButton from "../Button/PrimaryButton.vue";
   import ButtonCheck from "../Icons/Dashboard/ButtonCheck.vue";
@@ -293,7 +293,7 @@
       };
     },
   };
-</script>
+</script> --}}
 <style>
   .toggle-label:before {
     position: absolute;

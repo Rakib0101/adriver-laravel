@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    @vite('resources/css/app.css')
+    @vite(['resources/css/tailwind.css', 'resources/css/app.css'])
 </head>
 
 <body>
@@ -34,14 +34,14 @@
                                 Page</a>
                         </li>
                         <li>
-                            <a class="update-link" href="/listing-details">Listing Detail Page</a>
+                            <a class="update-link" href="/ad-details">Listing Detail Page</a>
                         </li>
                         <li>
-                            <a class="update-link" href="/profile">Seller/User Profile
+                            <a class="update-link" href="/user-profile">Seller/User Profile
                             </a>
                         </li>
                         <li>
-                            <a class="update-link" href="/dashboard">Seller/User Dashboard</a>
+                            <a class="update-link" href="/user-dashboard">Seller/User Dashboard</a>
                         </li>
                     </ul>
                 </div>

@@ -1,4 +1,4 @@
-<template>
+
     <div class="pt-12">
         <div class="container">
             <h2 class="text-2xl text-gray-900 font-display font-semibold mb-6">
@@ -179,8 +179,8 @@
             </div>
         </div>
     </div>
-</template>
-<script setup>
+
+{{-- <script setup>
     import LightningIcon from "../Icons/Dashboard/LightningIcon.vue";
     import PrimaryButton from "../Button/PrimaryButton.vue";
     import SecondaryButton from "../Button/SecondaryButton.vue";
@@ -194,7 +194,7 @@
     import EblBank from "../../assets/images/img/ebl-bank.png";
     import EditIcon from "../Icons/Dashboard/EditIcon.vue";
     import PlusIcon from "../Icons/Dashboard/PlusIcon.vue";
-</script>
+</script> --}}
 <style>
     @media (min-width: 1024px) and (max-width:1319px) {
         .div-1 {

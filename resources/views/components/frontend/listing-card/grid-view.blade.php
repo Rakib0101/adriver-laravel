@@ -1,5 +1,5 @@
 @props(['isFeatured' => false, 'isTop' => false, 'isUrgent' => false, 'isSlide' => false, 'isFavorite' => false, 'forSell' => false, 'forXchange' => false])
-<a href="/listing-details"
+<a href="/ad-details"
     class="grid-card border border-gray-100 bg-white md:max-w-[310px] flex md:flex-col md:items-center flex-row rounded-md lg:flex-wrap shadow-[0px_8px_24px_rgba(23,30,21,0.04)] w-full transition-all duration-300"
     :class="{{ $isFeatured ? 'featured' : '' }}">
     <div class="md:w-full">

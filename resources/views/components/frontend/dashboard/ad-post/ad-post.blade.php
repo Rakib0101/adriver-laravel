@@ -1,4 +1,4 @@
-<template>
+
   <PricingPlan v-show="isPricingPlan" @choosePlan="choosePlan" @choosePayPlan="choosePayPlan" />
   <div v-show="openCheckout">
     <div class="container">
@@ -44,8 +44,8 @@
   <PayPerStepTwo v-show="openPayStepTwo" @completePayStepTwo="completePayStepTwo" />
   <PayPerCheckout v-show="payCheckout" @completePayCheckout="completePayCheckout" />
   <PublishedPost v-show="publishedPost" />
-</template>
-<script>
+
+{{-- <script>
   import ChangePlan from "../../Icons/Dashboard/ChangePlan.vue";
   import PricingPlan from "../../Pricing/PricingArea.vue";
   import CheckOutView from "../CheckoutView.vue";
@@ -196,4 +196,4 @@
       },
     },
   };
-</script>
+</script> --}}
