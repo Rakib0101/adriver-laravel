@@ -9,7 +9,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             You have 2 days. Pay your latest invoice.
@@ -19,7 +19,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             Your ad “v21 48mp ois slefie” is successful published.
@@ -29,7 +29,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             John Wick saved your ad to his favourite collection.
@@ -38,7 +38,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             Please complete your profile editing to post a ads.
@@ -47,7 +47,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             Your ad “converse blue training shoes” is successful published.
@@ -57,7 +57,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             Sir, 5 days remaining to complete your Adlisting membership
@@ -67,7 +67,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             You have 2 days. Pay your latest invoice.
@@ -77,7 +77,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             Your ad “v21 48mp ois slefie” is successful published.
@@ -87,7 +87,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             John Wick saved your ad to his favourite collection.
@@ -96,7 +96,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             Please complete your profile editing to post a ads.
@@ -105,7 +105,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             Your ad “converse blue training shoes” is successful published.
@@ -115,7 +115,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             Sir, 5 days remaining to complete your Adlisting membership
@@ -125,7 +125,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             You have 2 days. Pay your latest invoice.
@@ -135,7 +135,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             Your ad “v21 48mp ois slefie” is successful published.
@@ -145,7 +145,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             John Wick saved your ad to his favourite collection.
@@ -154,7 +154,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             Please complete your profile editing to post a ads.
@@ -163,7 +163,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             Your ad “converse blue training shoes” is successful published.
@@ -173,7 +173,7 @@
                     <li
                         class="px-6 py-3 flex gap-2 items-center border-b border-gray-50 hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                         <span class="w-8 h-8 rounded-full">
-                            <img :src="avatar" alt="" />
+                            <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                         </span>
                         <p class="text-gray-600 font-display text-base">
                             Sir, 5 days remaining to complete your Adlisting membership

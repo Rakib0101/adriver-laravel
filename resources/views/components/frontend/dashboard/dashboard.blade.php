@@ -1,8 +1,8 @@
 <div x-data="{ allActivity: false }">
-    <template x-show="allActivity">
+    <div x-cloak x-show="allActivity">
         <x-frontend.dashboard.all-activity />
-    </template>
-  <div class="pt-12" x-show="!allActivity">
+    </div>
+  <div class="pt-12" x-cloak x-show="!allActivity">
     <div class="container">
       <h2 class="text-2xl text-gray-900 font-display font-semibold mb-6">
         Hey, Rnix point
@@ -59,7 +59,7 @@
           <h2 class="text-lg font-display font-semibold text-gray-900 mb-4">
             Profile Views
           </h2>
-          <my-chart />
+          <x-frontend.chart.profile-chart />
         </div>
         <div
           class="border border-gray-100 shadow-[0px_8px_24px_rgba(23,30,21,0.04)] rounded-xl pt-6 w-full max-w-[536px] md:max-h-[450px] scrollbar-hide">
@@ -76,7 +76,7 @@
             <ul>
               <li class="px-6 py-3 flex gap-2 items-center hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                 <span class="w-8 h-8 rounded-full">
-                  <img :src="avatar" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                 </span>
                 <p class="text-gray-600 font-display text-base">
                   You have 2 days. Pay your latest invoice.
@@ -85,7 +85,7 @@
               </li>
               <li class="px-6 py-3 flex gap-2 items-center hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                 <span class="w-8 h-8 rounded-full">
-                  <img :src="avatar" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                 </span>
                 <p class="text-gray-600 font-display text-base">
                   Your ad “v21 48mp ois slefie” is successful published.
@@ -94,7 +94,7 @@
               </li>
               <li class="px-6 py-3 flex gap-2 items-center hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                 <span class="w-8 h-8 rounded-full">
-                  <img :src="avatar" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                 </span>
                 <p class="text-gray-600 font-display text-base">
                   John Wick saved your ad to his favourite collection.
@@ -102,7 +102,7 @@
               </li>
               <li class="px-6 py-3 flex gap-2 items-center hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                 <span class="w-8 h-8 rounded-full">
-                  <img :src="avatar" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                 </span>
                 <p class="text-gray-600 font-display text-base">
                   Please complete your profile editing to post a ads.
@@ -110,7 +110,7 @@
               </li>
               <li class="px-6 py-3 flex gap-2 items-center hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                 <span class="w-8 h-8 rounded-full">
-                  <img :src="avatar" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                 </span>
                 <p class="text-gray-600 font-display text-base">
                   Your ad “converse blue training shoes” is successful
@@ -120,7 +120,7 @@
               </li>
               <li class="px-6 py-3 flex gap-2 items-center hover:bg-gray-50 transition-all duration-300 cursor-pointer">
                 <span class="w-8 h-8 rounded-full">
-                  <img :src="avatar" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/avatar-1.png') }}" alt="" />
                 </span>
                 <p class="text-gray-600 font-display text-base">
                   Sir, 5 days remaining to complete your Adlisting membership
@@ -131,7 +131,7 @@
           </div>
         </div>
       </div>
-      <ListingTable title="Active Listings" />
+      <x-frontend.dashboard.my-listing title="Active Listings" />
     </div>
   </div>
 </div>

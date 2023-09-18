@@ -45,7 +45,7 @@
                         <tr class="hover:bg-gray-50 transition-all duration-300">
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-1.5 text-sm text-gray-900 font-semibold font-display">
-                                    <TableId />
+                                    <i class="ph ph-queue text-xl leading-5"></i>
                                     <span>ID58185</span>
                                 </div>
                             </td>
@@ -58,12 +58,11 @@
                                 </p>
                             </td>
                             <td class="pr-6 py-4">
-                                <span
-                                    class="bg-warning-50 rounded-[3px] uppercase text-sm font-display font-semibold text-warning-500 px-2 py-1.5">pending</span>
+                                <span class="bg-warning-50 rounded-[3px] uppercase text-sm font-display font-semibold text-warning-500 px-2 py-1.5">pending</span>
                             </td>
                             <td class="pr-6 py-4">
                                 <div class="flex gap-1 items-center">
-                                    <credit-card class="text-blue-500" />
+                                    <i class="ph ph-credit-card text-xl leading-5 text-blue-500"></i>
                                     <p class="text-gray-900 text-sm font-semibold text-ellipsis whitespace-nowrap">
                                         Pricing Plan (Standard)
                                     </p>
@@ -72,7 +71,7 @@
                             <td class="pr-6 py-4">
                                 <p
                                     class="text-sm flex gap-2 items-center font-display text-gray-900 text-ellipsis whitespace-nowrap">
-                                    <img class="w-6 h-6" :src="MasterCard" alt="" />
+                                    <img class="w-6 h-6" src="{{ asset('frontend/assets/images/img/mastercard.png') }}" alt="" />
                                     Debit Card
                                 </p>
                             </td>
@@ -83,16 +82,15 @@
                                 </a>
                             </td>
                             <td class="pr-6 py-4">
-                                <button
-                                    class="download-btn w-12 h-12 inline-flex justify-center items-center border-2 border-primary-500 text-primary-500 rounded-md hover:bg-primary-500 hover:text-white transition-all duration-300">
-                                    <download-icon />
+                                <button class="download-btn w-12 h-12 inline-flex justify-center items-center border-2 border-primary-500 text-primary-500 rounded-md hover:bg-primary-500 hover:text-white transition-all duration-300">
+                                    <i class="ph-bold ph-download-simple text-2xl leading-6"></i>
                                 </button>
                             </td>
                         </tr>
                         <tr class="hover:bg-gray-50 transition-all duration-300">
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-1.5 text-sm text-gray-900 font-semibold font-display">
-                                    <TableId />
+                                    <i class="ph ph-queue text-xl leading-5"></i>
                                     <span>ID58185</span>
                                 </div>
                             </td>
@@ -110,7 +108,7 @@
                             </td>
                             <td class="pr-6 py-4">
                                 <div class="flex gap-1 items-center">
-                                    <currency-icon class="text-blue-500" />
+                                    <i class="ph ph-currency-dollar text-xl leading-5 text-blue-500"></i>
                                     <p class="text-gray-900 text-sm font-semibold text-ellipsis whitespace-nowrap">
                                         Pay Per Listing
                                     </p>
@@ -119,7 +117,7 @@
                             <td class="pr-6 py-4">
                                 <p
                                     class="text-sm flex gap-2 items-center font-display text-gray-900 text-ellipsis whitespace-nowrap">
-                                    <img class="w-6 h-6" :src="EblBank" alt="" />
+                                    <img class="w-6 h-6" src="{{ asset('frontend/assets/images/img/ebl-bank.png') }}" alt="" />
                                     EBL Bank
                                 </p>
                             </td>
@@ -132,14 +130,14 @@
                             <td class="pr-6 py-4">
                                 <button
                                     class="download-btn w-12 h-12 inline-flex justify-center items-center border-2 border-primary-500 text-primary-500 rounded-md hover:bg-primary-500 hover:text-white transition-all duration-300">
-                                    <download-icon />
+                                    <i class="ph-bold ph-download-simple text-2xl leading-6"></i>
                                 </button>
                             </td>
                         </tr>
                         <tr class="hover:bg-gray-50 transition-all duration-300">
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-1.5 text-sm text-gray-900 font-semibold font-display">
-                                    <TableId />
+                                    <i class="ph ph-queue text-xl leading-5"></i>
                                     <span>ID58185</span>
                                 </div>
                             </td>
@@ -157,16 +155,15 @@
                             </td>
                             <td class="pr-6 py-4">
                                 <div class="flex gap-1 items-center">
-                                    <listing-promotion class="text-blue-500" />
+                                    <i class="ph ph-arrow-fat-up text-xl leading-5 text-blue-500"></i>
                                     <p class="text-gray-900 text-sm font-semibold text-ellipsis whitespace-nowrap">
                                         Listing Promotion
                                     </p>
                                 </div>
                             </td>
                             <td class="pr-6 py-4">
-                                <p
-                                    class="text-sm flex gap-2 items-center font-display text-gray-900 text-ellipsis whitespace-nowrap">
-                                    <img class="w-6 h-6" :src="CityBank" alt="" />
+                                <p class="text-sm flex gap-2 items-center font-display text-gray-900 text-ellipsis whitespace-nowrap">
+                                    <img class="w-6 h-6" src="{{ asset('frontend/assets/images/img/city-bank.png') }}" alt="" />
                                     City Bank
                                 </p>
                             </td>
@@ -179,14 +176,14 @@
                             <td class="pr-6 py-4">
                                 <button
                                     class="download-btn w-12 h-12 inline-flex justify-center items-center border-2 border-primary-500 text-primary-500 rounded-md hover:bg-primary-500 hover:text-white transition-all duration-300">
-                                    <download-icon />
+                                    <i class="ph-bold ph-download-simple text-2xl leading-6"></i>
                                 </button>
                             </td>
                         </tr>
                         <tr class="hover:bg-gray-50 transition-all duration-300">
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-1.5 text-sm text-gray-900 font-semibold font-display">
-                                    <TableId />
+                                    <i class="ph ph-queue text-xl leading-5"></i>
                                     <span>ID58185</span>
                                 </div>
                             </td>
@@ -213,7 +210,7 @@
                             <td class="pr-6 py-4">
                                 <p
                                     class="text-sm flex gap-2 items-center font-display text-gray-900 text-ellipsis whitespace-nowrap">
-                                    <img class="w-6 h-6" :src="EblBank" alt="" />
+                                    <img class="w-6 h-6" src="{{ asset('frontend/assets/images/img/ebl-bank.png') }}" alt="" />
                                     EBL Bank
                                 </p>
                             </td>
@@ -226,7 +223,7 @@
                             <td class="pr-6 py-4">
                                 <button
                                     class="download-btn w-12 h-12 inline-flex justify-center items-center border-2 border-primary-500 text-primary-500 rounded-md hover:bg-primary-500 hover:text-white transition-all duration-300">
-                                    <download-icon />
+                                    <i class="ph-bold ph-download-simple text-2xl leading-6"></i>
                                 </button>
                             </td>
                         </tr>
@@ -234,7 +231,7 @@
                             <td class="px-6 py-4">
                                 <div
                                     class="flex items-center gap-1.5 text-sm text-gray-900 font-semibold font-display">
-                                    <TableId />
+                                    <i class="ph ph-queue text-xl leading-5"></i>
                                     <span>ID58185</span>
                                 </div>
                             </td>
@@ -252,7 +249,7 @@
                             </td>
                             <td class="pr-6 py-4">
                                 <div class="flex gap-1 items-center">
-                                    <credit-card class="text-blue-500" />
+                                    <i class="ph ph-credit-card text-xl leading-5 text-blue-500"></i>
                                     <p class="text-gray-900 text-sm font-semibold text-ellipsis whitespace-nowrap">
                                         Pricing Plan (Standard)
                                     </p>
@@ -261,7 +258,7 @@
                             <td class="pr-6 py-4">
                                 <p
                                     class="text-sm flex gap-2 items-center font-display text-gray-900 text-ellipsis whitespace-nowrap">
-                                    <img class="w-6 h-6" :src="MasterCard" alt="" />
+                                    <img class="w-6 h-6" src="{{ asset('frontend/assets/images/img/mastercard.png') }}" alt="" />
                                     Debit Card
                                 </p>
                             </td>
@@ -274,7 +271,7 @@
                             <td class="pr-6 py-4">
                                 <button
                                     class="download-btn w-12 h-12 inline-flex justify-center items-center border-2 border-primary-500 text-primary-500 rounded-md hover:bg-primary-500 hover:text-white transition-all duration-300">
-                                    <download-icon />
+                                    <i class="ph-bold ph-download-simple text-2xl leading-6"></i>
                                 </button>
                             </td>
                         </tr>
@@ -282,7 +279,7 @@
                             <td class="px-6 py-4">
                                 <div
                                     class="flex items-center gap-1.5 text-sm text-gray-900 font-semibold font-display">
-                                    <TableId />
+                                    <i class="ph ph-queue text-xl leading-5"></i>
                                     <span>ID58185</span>
                                 </div>
                             </td>
@@ -300,7 +297,7 @@
                             </td>
                             <td class="pr-6 py-4">
                                 <div class="flex gap-1 items-center">
-                                    <credit-card class="text-blue-500" />
+                                    <i class="ph ph-credit-card text-xl leading-5 text-blue-500"></i>
                                     <p class="text-gray-900 text-sm font-semibold text-ellipsis whitespace-nowrap">
                                         Pricing Plan (Basic)
                                     </p>
@@ -309,7 +306,7 @@
                             <td class="pr-6 py-4">
                                 <p
                                     class="text-sm flex gap-2 items-center font-display text-gray-900 text-ellipsis whitespace-nowrap">
-                                    <img class="w-6 h-6" :src="MasterCard" alt="" />
+                                    <img class="w-6 h-6" src="{{ asset('frontend/assets/images/img/mastercard.png') }}" alt="" />
                                     Debit Card
                                 </p>
                             </td>
@@ -320,9 +317,8 @@
                                 </a>
                             </td>
                             <td class="pr-6 py-4">
-                                <button
-                                    class="download-btn w-12 h-12 inline-flex justify-center items-center border-2 border-primary-500 text-primary-500 rounded-md hover:bg-primary-500 hover:text-white transition-all duration-300">
-                                    <download-icon />
+                                <button class="download-btn w-12 h-12 inline-flex justify-center items-center border-2 border-primary-500 text-primary-500 rounded-md hover:bg-primary-500 hover:text-white transition-all duration-300">
+                                    <i class="ph-bold ph-download-simple text-2xl leading-6"></i>
                                 </button>
                             </td>
                         </tr>
@@ -330,7 +326,7 @@
                             <td class="px-6 py-4">
                                 <div
                                     class="flex items-center gap-1.5 text-sm text-gray-900 font-semibold font-display">
-                                    <TableId />
+                                    <i class="ph ph-queue text-xl leading-5"></i>
                                     <span>ID58185</span>
                                 </div>
                             </td>
@@ -355,9 +351,8 @@
                                 </div>
                             </td>
                             <td class="pr-6 py-4">
-                                <p
-                                    class="text-sm flex gap-2 items-center font-display text-gray-900 text-ellipsis whitespace-nowrap">
-                                    <img class="w-6 h-6" :src="EblBank" alt="" />
+                                <p class="text-sm flex gap-2 items-center font-display text-gray-900 text-ellipsis whitespace-nowrap">
+                                    <img class="w-6 h-6" src="{{ asset('frontend/assets/images/img/ebl-bank.png') }}" alt="" />
                                     EBL Bank
                                 </p>
                             </td>
@@ -368,9 +363,8 @@
                                 </a>
                             </td>
                             <td class="pr-6 py-4">
-                                <button
-                                    class="download-btn w-12 h-12 inline-flex justify-center items-center border-2 border-primary-500 text-primary-500 rounded-md hover:bg-primary-500 hover:text-white transition-all duration-300">
-                                    <download-icon />
+                                <button class="download-btn w-12 h-12 inline-flex justify-center items-center border-2 border-primary-500 text-primary-500 rounded-md hover:bg-primary-500 hover:text-white transition-all duration-300">
+                                    <i class="ph-bold ph-download-simple text-2xl leading-6"></i>
                                 </button>
                             </td>
                         </tr>
@@ -378,7 +372,7 @@
                             <td class="px-6 py-4">
                                 <div
                                     class="flex items-center gap-1.5 text-sm text-gray-900 font-semibold font-display">
-                                    <TableId />
+                                    <i class="ph ph-queue text-xl leading-5"></i>
                                     <span>ID58185</span>
                                 </div>
                             </td>
@@ -396,7 +390,7 @@
                             </td>
                             <td class="pr-6 py-4">
                                 <div class="flex gap-1 items-center">
-                                    <credit-card class="text-blue-500" />
+                                    <i class="ph ph-credit-card text-xl leading-5 text-blue-500"></i>
                                     <p class="text-gray-900 text-sm font-semibold text-ellipsis whitespace-nowrap">
                                         Pricing Plan (Premium)
                                     </p>
@@ -405,7 +399,7 @@
                             <td class="pr-6 py-4">
                                 <p
                                     class="text-sm flex gap-2 items-center font-display text-gray-900 text-ellipsis whitespace-nowrap">
-                                    <img class="w-6 h-6" :src="CityBank" alt="" />
+                                    <img class="w-6 h-6" src="{{ asset('frontend/assets/images/img/city-bank.png') }}" alt="" />
                                     City Bank
                                 </p>
                             </td>
@@ -416,16 +410,15 @@
                                 </a>
                             </td>
                             <td class="pr-6 py-4">
-                                <button
-                                    class="download-btn w-12 h-12 inline-flex justify-center items-center border-2 border-primary-500 text-primary-500 rounded-md hover:bg-primary-500 hover:text-white transition-all duration-300">
-                                    <download-icon />
+                                <button class="download-btn w-12 h-12 inline-flex justify-center items-center border-2 border-primary-500 text-primary-500 rounded-md hover:bg-primary-500 hover:text-white transition-all duration-300">
+                                    <i class="ph-bold ph-download-simple text-2xl leading-6"></i>
                                 </button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <pagination-index />
+            <x-frontend.pagination.pagination-view />
         </div>
     </div>
 </div>

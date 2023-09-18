@@ -4,25 +4,25 @@
     <div x-data="{ activeTab:'dashboard' }">
         <div class="py-[15px] sm:flex hidden gap-2 items-center overflow-x-auto border-b border-gray-100">
             <div class="container">
-                <div class="flex">
+                <div class="flex overflow-x-auto overflow-y-hidden">
                     <button class="tab-button" :class="{ active: activeTab === 'dashboard' }" @click="activeTab = 'dashboard'">
                         <div
                             class="tab-link inline-flex cursor-pointer rounded gap-2 items-center text-gray-600 px-3 py-2 hover:bg-primary-50 hover:text-primary-500">
-                            <BarChart />
+                            <x-frontend.svg-icons.bar-chart />
                             <span class="whitespace-nowrap">Dashboard</span>
                         </div>
                     </button>
                     <button class="tab-button" :class="{ active: activeTab === 'my-listing' }" @click="activeTab = 'my-listing'">
                         <div
                             class="tab-link inline-flex cursor-pointer rounded gap-2 items-center text-gray-600 px-3 py-2 hover:bg-primary-50 hover:text-primary-500">
-                            <ClipBoard />
+                            <x-frontend.svg-icons.clip-board />
                             <span class="whitespace-nowrap">My Listing</span>
                         </div>
                     </button>
                     <button class="tab-button" :class="{ active: activeTab === 'post-listing' }" @click="activeTab = 'post-listing'">
                         <div
                             class="tab-link inline-flex cursor-pointer rounded gap-2 items-center text-gray-600 px-3 py-2 hover:bg-primary-50 hover:text-primary-500">
-                            <PlusCircle />
+                            <x-frontend.svg-icons.plus-circle />
                             <span class="whitespace-nowrap">Post Listing</span>
                         </div>
                     </button>
@@ -30,35 +30,35 @@
                         @click="activeTab = 'favorite-listing'">
                         <div
                             class="tab-link inline-flex cursor-pointer rounded gap-2 items-center text-gray-600 px-3 py-2 hover:bg-primary-50 hover:text-primary-500">
-                            <HeartIcon />
+                            <x-frontend.svg-icons.heart-icon />
                             <span class="whitespace-nowrap">Favorite Listing</span>
                         </div>
                     </button>
                     <button class="tab-button" :class="{ active: activeTab === 'plan-billing' }" @click="activeTab = 'plan-billing'">
                         <div
                             class="tab-link inline-flex cursor-pointer rounded gap-2 items-center text-gray-600 px-3 py-2 hover:bg-primary-50 hover:text-primary-500">
-                            <CreditCard />
+                            <x-frontend.svg-icons.credit-card />
                             <span class="whitespace-nowrap">Plans & Billing</span>
                         </div>
                     </button>
                     <button class="tab-button" :class="{ active: activeTab === 'invoice' }" @click="activeTab = 'invoice'">
                         <div
                             class="tab-link inline-flex cursor-pointer rounded gap-2 items-center text-gray-600 px-3 py-2 hover:bg-primary-50 hover:text-primary-500">
-                            <FileText />
+                            <x-frontend.svg-icons.file-text />
                             <span class="whitespace-nowrap">Invoice</span>
                         </div>
                     </button>
                     <button class="tab-button" :class="{ active: activeTab === 'message' }" @click="activeTab = 'message'">
                         <div
                             class="tab-link inline-flex cursor-pointer rounded gap-2 items-center text-gray-600 px-3 py-2 hover:bg-primary-50 hover:text-primary-500">
-                            <MessageDots />
+                            <x-frontend.svg-icons.chat-dots />
                             <span class="whitespace-nowrap">Message</span>
                         </div>
                     </button>
                     <button class="tab-button" :class="{ active: activeTab === 'setting' }" @click="activeTab = 'setting'">
                         <div
                             class="tab-link inline-flex cursor-pointer rounded gap-2 items-center text-gray-600 px-3 py-2 hover:bg-primary-50 hover:text-primary-500">
-                            <SettingIcon />
+                            <x-frontend.svg-icons.setting-icon />
                             <span class="whitespace-nowrap">Setting</span>
                         </div>
                     </button>

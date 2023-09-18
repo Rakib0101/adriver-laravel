@@ -113,27 +113,26 @@
                                         <ul>
                                             <li
                                                 class="flex px-[18px] py-2 items-center gap-2 hover:bg-gray-50 text-gray-600 hover:text-gray-900">
-                                                <MarkSold />
+                                                <i class="ph ph-x-circle text-xl leading-5"></i>
                                                 Mark As Sold
                                             </li>
                                             <li x-on:click="togglePromotion = !togglePromotion"
                                                 class="flex px-[18px] py-2 items-center gap-2 hover:bg-gray-50 text-gray-600 hover:text-gray-900">
-                                                <ListingPromotion />
+                                                <i class="ph ph-arrow-fat-up text-xl leading-5"></i>
                                                 Listing Promotion
                                             </li>
-                                            <li
-                                                class="flex px-[18px] py-2 items-center gap-2 hover:bg-gray-50 text-gray-600 hover:text-gray-900">
-                                                <MessageDots />
+                                            <li class="flex px-[18px] py-2 items-center gap-2 hover:bg-gray-50 text-gray-600 hover:text-gray-900">
+                                                <i class="ph ph-chat-dots text-xl leading-5"></i>
                                                 View All Message
                                             </li>
                                             <li
                                                 class="flex px-[18px] py-2 items-center gap-2 hover:bg-gray-50 text-gray-600 hover:text-gray-900">
-                                                <ListingDetails />
+                                                <i class="ph ph-file-text text-xl leading-5"></i>
                                                 View Listing Detail
                                             </li>
                                             <li
                                                 class="flex px-[18px] py-2 items-center gap-2 hover:bg-gray-50 text-gray-600 hover:text-gray-900">
-                                                <ShareListing />
+                                                <i class="ph ph-share-network text-xl leading-5"></i>
                                                 Share Listing
                                             </li>
                                         </ul>
@@ -147,7 +146,6 @@
         </div>
 
         <x-frontend.pagination.pagination-view />
-        <span x-text="togglePromotion"></span>
         <div x-cloak x-show="togglePromotion">
             <x-frontend.dashboard.promote-listing />
         </div>

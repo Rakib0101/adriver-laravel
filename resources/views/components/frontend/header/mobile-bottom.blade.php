@@ -21,14 +21,14 @@
                     <x-bi-plus class="w-6 h-6" />
                 </div>
             </a>
-            <a href="/dashboard"
+            <a href="/user-dashboard"
                 class="flex flex-col justify-center gap-1 hover:text-gray-900 text-gray-400 items-center w-full max-w-[76px]">
                 <div>
                     <x-bi-chat-left-dots class="w-6 h-6" />
                 </div>
                 <h2 class="text-xs">Message</h2>
             </a>
-            <a href="/dashboard"
+            <a href="/user-dashboard"
                 class="flex flex-col justify-center gap-1 hover:text-gray-900 text-gray-400 items-center w-full max-w-[76px]">
                 <div>
                     <x-bi-person class="w-6 h-6" />
