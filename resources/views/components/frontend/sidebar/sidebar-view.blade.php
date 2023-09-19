@@ -11,7 +11,7 @@
                         <span x-text="category.name"></span>
                         <span class="badge" x-text="category.count"></span>
                     </a>
-                    <ul x-show="isDropdownOpen(category.id)" class="sub-cat-content">
+                    <ul x-cloak x-show="isDropdownOpen(category.id)" class="sub-cat-content">
                         <template x-for="(subcat, index) in category?.subCat" :key="index">
                             <li><a href="" x-text="subcat"></a></li>
                         </template>

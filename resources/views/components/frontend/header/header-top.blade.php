@@ -28,16 +28,16 @@
                           <span>English</span>
                           <x-frontend.svg-icons.arrow-down />
                       </div>
-                      <ul class="dropdown-item w-[200px] max-w-[200px]" @click.outside="isDropdown = false"
+                      <ul class="dropdown-item w-[200px] max-w-[200px]" @click.outside="isDropdown = false" x-cloak
                           x-show="isDropdown">
                           <li><a href="#" class="inline-flex items-center gap-2"><span
-                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-show="true" /></span> English</a>
+                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-cloak x-show="true" /></span> English</a>
                           </li>
                           <li><a href="#" class="inline-flex items-center gap-2"><span
-                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-show="false" /></span> Bangla</a>
+                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-cloak x-show="false" /></span> Bangla</a>
                           </li>
                           <li><a href="#" class="inline-flex items-center gap-2"><span
-                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-show="false" /></span> Arabic</a>
+                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-cloak x-show="false" /></span> Arabic</a>
                           </li>
                       </ul>
                   </div>
@@ -47,14 +47,14 @@
                           <span>USD</span>
                           <x-frontend.svg-icons.arrow-down />
                       </div>
-                      <ul class="dropdown-item w-[200px] max-w-[200px]" @click.outside="isDropdown = false"
+                      <ul class="dropdown-item w-[200px] max-w-[200px]" @click.outside="isDropdown = false" x-cloak
                           x-show="isDropdown">
                           <li><a href="#" class="inline-flex items-center gap-2"><span
-                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-show="true" /></span> USD</a></li>
+                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-cloak x-show="true" /></span> USD</a></li>
                           <li><a href="#" class="inline-flex items-center gap-2"><span
-                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-show="false" /></span> BDT</a></li>
+                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-cloak x-show="false" /></span> BDT</a></li>
                           <li><a href="#" class="inline-flex items-center gap-2"><span
-                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-show="false" /></span> AUD</a></li>
+                                      class="w-5 h-5"><x-bi-check2 class="w-5 h-5" x-cloak x-show="false" /></span> AUD</a></li>
                       </ul>
                   </div>
               </div>

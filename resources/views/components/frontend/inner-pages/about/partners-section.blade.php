@@ -1,5 +1,4 @@
-<template>
-    <section class="py-10 bg-gray-50">
+   <section class="py-10 bg-gray-50">
         <div class="container">
             <h3 class="text-base text-center mb-6 text-gray-600">Trusted by 4,000+ companies</h3>
             <div class="overflow-x-auto">
@@ -16,14 +15,3 @@
             </div>
         </div>
     </section>
-</template>
-<script setup>
-import BrandOne from "../../Icons/PartnerBrand/BrandOne.vue";
-import BrandTwo from "../../Icons/PartnerBrand/BrandTwo.vue";
-import BrandThree from "../../Icons/PartnerBrand/BrandThree.vue";
-import BrandFour from "../../Icons/PartnerBrand/BrandFour.vue";
-import BrandFive from "../../Icons/PartnerBrand/BrandFive.vue";
-import BrandSix from "../../Icons/PartnerBrand/BrandSix.vue";
-import BrandSeven from "../../Icons/PartnerBrand/BrandSeven.vue";
-import BrandEight from "../../Icons/PartnerBrand/BrandEight.vue";
-</script>

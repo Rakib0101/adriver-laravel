@@ -39,59 +39,59 @@
             <form action="">
                 <div class="mb-[18px]">
                     <div class="flex justify-between mb-2">
-                        <label for="phone" class="flex text-sm text-gray-900" x-show="phoneLogin">Phone
+                        <label for="phone" class="flex text-sm text-gray-900" x-cloak x-show="phoneLogin">Phone
                             Number</label>
-                        <label for="email" class="flex text-sm text-gray-900" x-show="emailLogin">Email</label>
-                        <button class="text-primary-500 font-display font-semibold text-sm" x-show="phoneLogin"
+                        <label for="email" class="flex text-sm text-gray-900" x-cloak x-show="emailLogin">Email</label>
+                        <button class="text-primary-500 font-display font-semibold text-sm" x-cloak x-show="phoneLogin"
                             @click="emailLogin = true; phoneLogin= false">
                             Use Email Instead
                         </button>
-                        <button class="text-primary-500 font-display font-semibold text-sm" x-show="emailLogin"
+                        <button class="text-primary-500 font-display font-semibold text-sm" x-cloak x-show="emailLogin"
                             @click="emailLogin = false; phoneLogin= true">
                             Use Phone Number Instead
                         </button>
                     </div>
-                    <div x-show="phoneLogin">
+                    <div x-cloak x-show="phoneLogin">
                         <x-frontend.custom-input.input id="phone" type="text" placeholder="Enter Phone Number" />
                     </div>
-                    <div x-show="emailLogin">
+                    <div x-cloak x-show="emailLogin">
                         <x-frontend.custom-input.input id="email" type="email" placeholder="Email address" />
                     </div>
                 </div>
-                <div class="mb-[18px]" x-show="emailLogin">
+                <div class="mb-[18px]" x-cloak x-show="emailLogin">
                     <label for="password" class="flex mb-2 text-sm text-gray-900">Password</label>
                     <div class="relative flex">
                         <input id="password" :type="eyeOn ? 'text' : 'password'" placeholder="8 + character"
                             class="flex w-full h-12 py-3 px-[18px] outline-none border border-gray-100 shadow-[0px_3px_14px_rgba(23,30,21,0.02)] rounded-md focus:border-primary-500 focus:shadow-[0px_8px_24px_rgba(88,179,43,0.12)]" />
-                        <label for="password" class="absolute top-3 right-4" x-show="eyeOff"
+                        <label for="password" class="absolute top-3 right-4" x-cloak x-show="eyeOff"
                             @click="eyeOn = true; eyeOff = false">
                             <i class="ph ph-eye text-2xl leading-6"></i>
                         </label>
-                        <label for="password" class="absolute top-3 right-4" x-show="eyeOn"
+                        <label for="password" class="absolute top-3 right-4" x-cloak x-show="eyeOn"
                             @click="eyeOn = false; eyeOff = true">
                             <i class="ph ph-eye-closed text-2xl leading-6"></i>
                         </label>
                     </div>
                 </div>
                 <div class="mb-6 flex justify-between">
-                    <div x-show="phoneLogin" class="inline-flex gap-2 custom-checkbox">
+                    <div x-cloak x-show="phoneLogin" class="inline-flex gap-2 custom-checkbox">
                         <x-frontend.custom-input.input type="checkbox" name="keepme" id="keepme" />
                         <label for="keepme" class="text-sm !text-gray-600">Keep me logged in.</label>
                     </div>
-                    <div x-show="emailLogin" class="flex gap-2 custom-checkbox">
+                    <div x-cloak x-show="emailLogin" class="flex gap-2 custom-checkbox">
                         <x-frontend.custom-input.input type="checkbox" name="keepme" id="keepme" />
                         <label for="keepme" class="text-sm !text-gray-600">Keep me logged in. </label>
 
                     </div>
 
-                    <div x-show="emailLogin">
+                    <div x-cloak x-show="emailLogin">
                         <a href="#" class="text-primary-500 font-display font-medium">Forget Password</a>
                     </div>
                 </div>
                 <div class="mb-4">
                     <x-frontend.button.primary-button class="w-full">
-                        <span x-show="phoneLogin">Send otp</span>
-                        <span x-show="emailLogin">Sign IN</span>
+                        <span x-cloak x-show="phoneLogin">Send otp</span>
+                        <span x-cloak x-show="emailLogin">Sign IN</span>
                         <button-arrow />
                     </x-frontend.button.primary-button>
                 </div>
@@ -107,7 +107,7 @@
         <!--End Sign-In Section -->
 
         <!--Sign-Up Section -->
-        <div x-show="signUp">
+        <div x-cloak x-show="signUp">
             <h2 class="text-gray-900 text-center mb-3 text-xl font-display font-semibold uppercase">
                 Create Account on <span class="text-primary-500">ADriver</span>
             </h2>
@@ -128,11 +128,11 @@
                     <div class="relative flex">
                         <input id="password" :type="eyeOn ? 'text' : 'password'" placeholder="8 + character"
                             class="flex w-full h-12 py-3 px-[18px] outline-none border border-gray-100 shadow-[0px_3px_14px_rgba(23,30,21,0.02)] rounded-md focus:border-primary-500 focus:shadow-[0px_8px_24px_rgba(88,179,43,0.12)]" />
-                        <label for="password" class="absolute top-3 right-4" x-show="eyeOff"
+                        <label for="password" class="absolute top-3 right-4" x-cloak x-show="eyeOff"
                             @click="eyeOn = true; eyeOff = false">
                             <i class="ph ph-eye text-2xl leading-6"></i>
                         </label>
-                        <label for="password" class="absolute top-3 right-4" x-show="eyeOn"
+                        <label for="password" class="absolute top-3 right-4" x-cloak x-show="eyeOn"
                             @click="eyeOn = false; eyeOff = true">
                             <i class="ph ph-eye-closed text-2xl leading-6"></i>
                         </label>
@@ -143,11 +143,11 @@
                     <div class="relative flex">
                         <input id="password" :type="ceyeOn ? 'text' : 'password'" placeholder="8 + character"
                             class="flex w-full h-12 py-3 px-[18px] outline-none border border-gray-100 shadow-[0px_3px_14px_rgba(23,30,21,0.02)] rounded-md focus:border-primary-500 focus:shadow-[0px_8px_24px_rgba(88,179,43,0.12)]" />
-                        <label for="cpassword" class="absolute top-3 right-4" x-show="ceyeOff"
+                        <label for="cpassword" class="absolute top-3 right-4" x-cloak x-show="ceyeOff"
                             @click="ceyeOn = true; ceyeOff = false">
                             <i class="ph ph-eye text-2xl leading-6"></i>
                         </label>
-                        <label for="cpassword" class="absolute top-3 right-4" x-show="ceyeOn"
+                        <label for="cpassword" class="absolute top-3 right-4" x-cloak x-show="ceyeOn"
                             @click="ceyeOn = false; ceyeOff = true">
                             <i class="ph ph-eye-closed text-2xl leading-6"></i>
                         </label>

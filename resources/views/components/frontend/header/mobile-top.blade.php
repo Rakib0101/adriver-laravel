@@ -15,7 +15,7 @@
                         </span>
                         <span> Eng, USD </span>
                     </div>
-                    <div x-show="isPopup" :class="isPopup ? '':'hidden'"
+                    <div x-cloak x-show="isPopup" :class="isPopup ? '':'hidden'"
                         class="fixed bottom-0 z-[99] left-0 right-0 rounded-md bg-white shadow-[0px_12px_32px_rgba(23,30,21,0.08)] border border-gray-100 p-5">
                         <h2 class="text-lg text-center font-semibold font-display text-gray-900 mb-6">
                             Change Language & Currency

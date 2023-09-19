@@ -83,7 +83,7 @@
           </div>
         </li>
       </ul>
-      <div x-show="!isUserOwn">
+      <div x-cloak x-show="!isUserOwn">
         <button
         @click="isWriteReview = !isWriteReview"
           class="text-base bg-warning-500 px-5 rounded-md leading-[48px] text-white font-semibold font-display"

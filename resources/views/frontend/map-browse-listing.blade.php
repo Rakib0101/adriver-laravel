@@ -49,12 +49,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex justify-center flex-wrap gap-6 mb-6" x-show="isList">
+                <div class="flex justify-center flex-wrap gap-6 mb-6" x-cloak x-show="isList">
                     <template x-for="item in 12" :key="item">
                             <x-frontend.listing-card.list-view class="mx-auto" />
                         </template>
                 </div>
-                <div class="grid place-items-center 2xl:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-6 mb-6" x-show="isGrid">
+                <div class="grid place-items-center 2xl:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-6 mb-6" x-cloak x-show="isGrid">
                     <template x-for="item in 12" :key="item">
                         <x-frontend.listing-card.grid-view />
                     </template>

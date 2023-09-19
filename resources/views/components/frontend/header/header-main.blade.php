@@ -26,14 +26,14 @@
                     <div class="relative">
                         <input type="text" id="search-input" placeholder="Search for anything..."
                             class="pl-[54px] block w-full focus:outline-none" />
-                        <label class="absolute top-1/2 transform -translate-y-1/2 left-[18px]" for="search-input">
+                        <label class="absolute top-1/2 transform -translate-y-1/2 left-[18px] inline-flex" for="search-input">
                             <i class="ph ph-magnifying-glass text-xl leading-5"></i>
                         </label>
                     </div>
                 </label>
             </div>
             <div x-data="{ isLoginUser: false }">
-                <div class="flex gap-3 item-center" x-show="isLoginUser">
+                <div class="flex gap-3 item-center" x-cloak x-show="isLoginUser">
                     <div x-data="{ showMsg: false, showBell: false }" class="relative">
                         <div
                             class=" bg-white inline-flex gap-3 items-center p-3 border border-gray-100 rounded-md shadow-[0px_3px_14px_rgba(23,30,21,0.02)]">
@@ -43,7 +43,7 @@
                                     <span>
                                         <x-bi-chat-left-dots class="w-5 h-5" />
                                     </span>
-                                    <span x-show="!showMsg"
+                                    <span x-cloak x-show="!showMsg"
                                         class="h-[7px] w-[7px] absolute rounded-full bg-danger-500 top-0 right-0 ring ring-white">
                                     </span>
                                 </div>
@@ -54,16 +54,16 @@
                                     <span>
                                         <x-bi-bell class="w-5 h-5" />
                                     </span>
-                                    <span x-show="!showBell"
+                                    <span x-cloak x-show="!showBell"
                                         class="h-[7px] w-[7px] absolute rounded-full bg-danger-500 top-0 right-0 ring ring-white">
                                     </span>
                                 </div>
                             </button>
                         </div>
-                        <div x-show="showMsg">
+                        <div x-cloak x-show="showMsg">
                             <x-frontend.popup.message-popup />
                         </div>
-                        <div x-show="showBell">
+                        <div x-cloak x-show="showBell">
                             <x-frontend.popup.bell-popup />
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                         <UserMenu :show-menu="showMenu" class="absolute top-14 z-[99] right-0" />
                     </button>
                 </div>
-                <div class="flex gap-3 item-center" x-show="!isLoginUser">
+                <div class="flex gap-3 item-center" x-cloak x-show="!isLoginUser">
                     <temaplate @click="showModal = !showModal">
                         <x-frontend.button.outline-primary type="button">
                             Sign in

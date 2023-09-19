@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="filter-overlay" x-show="openModal" x-on:click="openModal = false"></div>
+    <div class="filter-overlay" x-cloak x-show="openModal" x-on:click="openModal = false"></div>
 </div>
 <style>
     .filter-overlay {

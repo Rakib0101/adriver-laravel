@@ -108,7 +108,7 @@
                                 <button @click="toggleDropdown(index)"
                                     class="p-3 relative bg-gray-50 border border-gray-50 w-12 h-12 rounded-md hover:bg-white hover:border-primary-500 dot">
                                     <i class="ph-bold ph-dots-three text-2xl leading-6"></i>
-                                    <div x-show="activeDropdown === index"
+                                    <div x-cloak x-show="activeDropdown === index"
                                         class="dropdown-list py-3 bg-white w-[248px] mt-3 shadow-[0px_12px_32px_rgba(23,30,21,0.08)] border border-gray-100 absolute right-0 top-full rounded-md z-50">
                                         <ul>
                                             <li

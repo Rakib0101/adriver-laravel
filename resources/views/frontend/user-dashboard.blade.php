@@ -67,28 +67,28 @@
         </div>
 
         <div class="container">
-            <div x-show="activeTab === 'dashboard'">
+            <div x-cloak x-show="activeTab === 'dashboard'">
                 <x-frontend.dashboard.dashboard />
             </div>
-            <div x-show="activeTab === 'my-listing'">
+            <div x-cloak x-show="activeTab === 'my-listing'">
                 <x-frontend.dashboard.my-listing />
             </div>
-            <div x-show="activeTab === 'post-listing'">
+            <div x-cloak x-show="activeTab === 'post-listing'">
                 <x-frontend.dashboard.ad-post.ad-post />
             </div>
-            <div x-show="activeTab === 'favorite-listing'">
+            <div x-cloak x-show="activeTab === 'favorite-listing'">
                 <x-frontend.dashboard.favorite-listing />
             </div>
-            <div x-show="activeTab === 'plan-billing'">
+            <div x-cloak x-show="activeTab === 'plan-billing'">
                 <x-frontend.dashboard.plan-billing />
             </div>
-            <div x-show="activeTab === 'invoice'">
+            <div x-cloak x-show="activeTab === 'invoice'">
                 <x-frontend.dashboard.invoice-table />
             </div>
-            <div x-show="activeTab === 'message'">
+            <div x-cloak x-show="activeTab === 'message'">
                 <x-frontend.dashboard.chat-box />
             </div>
-            <div x-show="activeTab === 'setting'">
+            <div x-cloak x-show="activeTab === 'setting'">
                 <x-frontend.dashboard.setting />
             </div>
         </div>

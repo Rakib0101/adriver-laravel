@@ -14,9 +14,9 @@
                 class="object-cover md:max-w-full w-full min-h-[120px] lg:min-w-[280px] md:max-h-[216px] transition-transform duration-300 img" />
             <div
                 class="absolute top-4 left-4 inline-flex gap-1.5 items-center opacity-100 transition-opacity duration-200 badges z-10">
-                <span x-show="isFeatured"
+                <span x-cloak x-show="isFeatured"
                     class="bg-warning-500 rounded-md py-1 px-2.5 border border-white shadow-[0px_2px_24px_rgba(0,0,0,0.24)] text-sm font-semibold text-white hidden md:flex">Featured</span>
-                <span x-show="isUrgent"
+                <span x-cloak x-show="isUrgent"
                     class="bg-[#CC3E42] rounded-md py-1 px-2.5 border border-white shadow-[0px_2px_24px_rgba(0,0,0,0.24)] text-sm font-semibold text-white hidden md:flex">Urgent</span>
             </div>
             <button

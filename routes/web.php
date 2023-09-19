@@ -35,3 +35,18 @@ Route::get('/user-profile', function () {
 Route::get('/user-dashboard', function () {
     return view('frontend.user-dashboard');
 });
+Route::get('/about', function () {
+    return view('frontend.inner-pages.about');
+});
+Route::get('/contact', function () {
+    return view('frontend.inner-pages.contact');
+});
+Route::get('/pricing-plan', function () {
+    return view('frontend.inner-pages.pricing-plan');
+});
+Route::get('/blog', function () {
+    return view('frontend.inner-pages.blog');
+});
+Route::get('/blog-details', function () {
+    return view('frontend.inner-pages.blog-details');
+});

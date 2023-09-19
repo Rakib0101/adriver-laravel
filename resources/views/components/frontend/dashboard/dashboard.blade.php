@@ -144,19 +144,6 @@
   import MyChart from "../Chart/MyChart.vue";
   import DoubleArrow from "../Icons/DoubleArrow.vue";
   import avatar from "../../assets/images/img/avatar-1.png";
-  import active01 from "../../assets/images/img/active-list-01.png";
-  import active02 from "../../assets/images/img/active-list-02.png";
-  import active03 from "../../assets/images/img/active-list-03.png";
-  import active04 from "../../assets/images/img/active-list-04.png";
-  // import CheckIcon from "../Icons/Profile/CheckIcon.vue";
-  // import DotsIcon from "../Icons/Profile/DotsIcon.vue";
-  // import TagIcon from "../Icons/Profile/TagIcon.vue";
-  // import CreditCard from "../Icons/Profile/CreditCard.vue";
-  // import MarkSold from "../Icons/Profile/MarkSold.vue";
-  // import ListingPromotion from "../Icons/Profile/ListingPromotion.vue";
-  // import MessageDots from "../Icons/Profile/MessageDots.vue";
-  // import ListingDetails from "../Icons/Profile/ListingDetails.vue";
-  // import ShareListing from "../Icons/Profile/ShareListing.vue";
   import ListingTable from "../Dashboard/MyListing.vue";
   import AllActivity from "../Dashboard/AllActivity.vue"
   export default {
