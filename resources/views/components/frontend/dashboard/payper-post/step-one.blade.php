@@ -3,7 +3,7 @@
         <div class="max-w-[872px] mx-auto pt-12 md:pb-[68px]">
             <div class="w-full md:max-w-[464px] mb-8">
                 <h2
-                    class="text-2xl md:text-[40px] text-center md:text-start leading-[48px] mb-3 font-display font-semibold text-gray-900">
+                    class="text-3xl md:text-[40px] text-center md:text-start leading-[48px] mb-3 font-display font-semibold text-gray-900">
                     Post Your Listing
                 </h2>
                 <p class="text-base text-gray-600 text-center md:text-start">
@@ -66,9 +66,9 @@
                     Listing Type
                 </h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                    <div class="flex gap-2 items-start custom-checkbox">
-                        <input type="radio" checked id="forsell" name="ad_type" />
-                        <label for="forsell"
+                    <label class="flex gap-2 items-start custom-checkbox h-[84px]">
+                        <input type="radio" checked id="forsell2" name="ad_type" />
+                        <label for="forsell2"
                             class="listing-type items-start border-2 border-transparent bg-transparent hover:bg-white py-3 px-4 rounded-lg w-[260px]">
                             <div class="flex w-full flex-col ml-3">
                                 <h2
@@ -80,10 +80,10 @@
                                 </p>
                             </div>
                         </label>
-                    </div>
-                    <div class="flex gap-2 items-start custom-checkbox">
-                        <input type="radio" id="forbuy" name="ad_type" />
-                        <label for="forbuy"
+                    </label>
+                    <div class="flex gap-2 items-start custom-checkbox h-[84px]">
+                        <input type="radio" id="forbuy2" name="ad_type" />
+                        <label for="forbuy2"
                             class="listing-type items-start border-2 border-transparent bg-transparent hover:bg-white py-3 px-4 rounded-lg w-[260px]">
                             <div class="flex w-full flex-col ml-3">
                                 <h2
@@ -97,8 +97,8 @@
                         </label>
                     </div>
                     <div class="flex gap-2 items-start custom-checkbox">
-                        <input type="radio" id="forexchange" name="ad_type" />
-                        <label for="forexchange"
+                        <input type="radio" id="forexchange2" name="ad_type" />
+                        <label for="forexchange2"
                             class="listing-type border-2 border-transparent bg-transparent hover:bg-white py-3 px-4 rounded-lg w-[260px]">
                             <div class="flex w-full flex-col ml-3">
                                 <h2
@@ -116,7 +116,7 @@
             </div>
             <!-- Listing Type end -->
 
-            <div class="sm:p-8 p-5 bg-gray-50 rounded-lg mb-6">
+            <div class="p-8 bg-gray-50 rounded-lg mb-6">
                 <h3 class="text-lg font-display font-semibold text-gray-900 mb-2">
                     Listing Location
                 </h3>
@@ -129,13 +129,13 @@
             </div>
             <div class="pt-8 pb-0 border-t border-gray-100">
                 <div class="flex gap-y-6 flex-row justify-between items-center">
-                    <div @click="completeCheckout">
+                    <div>
                         <x-frontend.button.secondary-button>
                             <i class="ph ph-info text-2xl"></i>
                             <span>Posting Guide</span>
                         </x-frontend.button.secondary-button>
                     </div>
-                    <div @click="completeStepOne">
+                    <div @click="completePayStepOne">
                         <x-frontend.button.primary-button>
                             <span>Next step</span>
                             <i class="ph ph-arrow-right text-2xl"></i>
@@ -146,6 +146,28 @@
         </div>
     </div>
 </div>
+{{-- <script setup>
+import CustomSelect from "../../CustomInput/CustomSelect.vue";
+import Multiselect from "@vueform/multiselect";
+import "@vueform/multiselect/themes/default.css";
+import SettingMap from "../../Map/SettingMap.vue";
+import PrimaryButton from "../../Button/PrimaryButton.vue";
+import SecondaryButton from "../../Button/SecondaryButton.vue";
+import ButtonArrow from "../../Icons/ButtonArrow.vue";
+import InfoCircle from "../../Icons/Button/InfoCircle.vue";
+import InputField from "../../CustomInput/InputField.vue";
+import { ref } from "vue";
+
+const value = ref(null);
+const value4 = ref(null);
+const value5 = ref(null);
+const value6 = ref(null);
+const options2 = [
+  { value: "option1", label: "Option 1" },
+  { value: "option2", label: "Option 2" },
+  { value: "option3", label: "Option 3" },
+];
+</script> --}}
 <style>
     label.listing-type {
         align-items: start !important;

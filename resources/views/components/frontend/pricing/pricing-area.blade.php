@@ -268,10 +268,11 @@
             <p class="text-gray-900 font-display text-base font-normal">
                 Don’t want to buy pricing plan, then pay per listing posting.
             </p>
-            <x-frontend.button.outline-primary class="whitespace-nowrap text-gray-900 border-gray-900 text-[15px]"
-                x-on:click="choosePayPlan">
-                Pay per Listing post
-            </x-frontend.button.outline-primary>
+            <div @click="choosePayPlan">
+                <x-frontend.button.outline-primary class="whitespace-nowrap text-gray-900 border-gray-900 text-[15px]">
+                    Pay per Listing post
+                </x-frontend.button.outline-primary>
+            </div>
         </div>
         <div>
             <img class="w-full object-cover" src="{{ asset('frontend/assets/images/img/advertisement-h.png') }}"
