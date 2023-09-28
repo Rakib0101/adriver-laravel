@@ -94,35 +94,10 @@
         </div>
     </div>
 @endsection
-<script setup>
-    import Header from "../components/Header/HeaderComponent.vue";
-    import Breadcrumb from "../components/Breadcrumb/Breadcrumb.vue";
-    import BreadcrumbArrow from "../components/Icons/BreadcrumbArrow.vue";
-    import BarChart from "../components/Icons/Dashboard/BarChart.vue";
-    import ClipBoard from "../components/Icons/Dashboard/ClipBoard.vue";
-    import PlusCircle from "../components/Icons/Dashboard/PlusCircle.vue";
-    import HeartIcon from "../components/Icons/Dashboard/Hearticon.vue";
-    import CreditCard from "../components/Icons/Dashboard/CreditCard.vue";
-    import FileText from "../components/Icons/Dashboard/FileText.vue";
-    import MessageDots from "../components/Icons/Dashboard/MessageDots.vue";
-    import SettingIcon from "../components/Icons/Dashboard/SettingIcon.vue";
-    import Dashboard from "../components/Dashboard/Dashboard.vue";
-    import MyListing from "../components/Dashboard/MyListing.vue";
-    import FavoriteListing from "../components/Dashboard/FavoriteListing.vue";
-    import PlanBilling from "../components/Dashboard/PlanBilling.vue";
-    import Invoice from "../components/Dashboard/InvoiceTable.vue";
-    import Message from "../components/Dashboard/MessageBox.vue";
-    import Setting from "../components/Dashboard/UserSetting.vue";
-    import Footer from "../components/FooterComponent.vue";
-    import MobileFooter from "../components/Header/MobileBottom.vue";
-    import {
-        ref
-    } from "vue";
-    import AddPost from "../components/Dashboard/PostAd/AddPost.vue";
-
-    const activeTab = ref("dashboard");
-    const userLogin = ref(true);
-</script>
+@section('scripts')
+    @stack('component_scripts')
+@endsection
+@section('styles')
 <style>
     .tab-button.active::before {
         border-bottom: 3px solid #58b32b;
@@ -162,3 +137,4 @@
         }
     }
 </style>
+@endsection

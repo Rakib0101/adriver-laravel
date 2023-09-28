@@ -34,70 +34,71 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="hover:bg-gray-50 transition-all duration-300">
-                            <td class="px-6 py-4 min-w-[364px]">
-                                <div class="flex items-center gap-3">
-                                    <img src="{{ asset('frontend/assets/images/img/active-list-01.png') }}"
-                                        alt="" class="w-24 h-[74px] rounded object-cover" />
+                        <template x-for="item in 8" :key="item">
+                            <tr class="hover:bg-gray-50 transition-all duration-300">
+                                <td class="px-6 py-4 min-w-[364px]">
+                                    <div class="flex items-center gap-3">
+                                        <img src="{{ asset('frontend/assets/images/img/active-list-01.png') }}"
+                                            alt="" class="w-24 h-[74px] rounded object-cover" />
+                                        <div>
+                                            <h2
+                                                class="text-gray-900 text-base font-medium font-display mb-1.5 line-clamp-2">
+                                                Simple Mobile 5G LTE Galaxy 12 Mini 512GB Gaming Phone
+                                            </h2>
+                                            <p class="text-sm font-display text-gray-500 text-ellipsis whitespace-nowrap">
+                                                Vijayawada, Andra Pradesh, India
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="pr-6 py-4 w-[202px]">
                                     <div>
                                         <h2
-                                            class="text-gray-900 text-base font-medium font-display mb-1.5 line-clamp-2">
-                                            Simple Mobile 5G LTE Galaxy 12 Mini 512GB Gaming Phone
+                                            class="text-xl text-warning-500 font-display font-semibold mb-1.5 text-ellipsis whitespace-nowrap">
+                                            $211.68
                                         </h2>
                                         <p class="text-sm font-display text-gray-500 text-ellipsis whitespace-nowrap">
-                                            Vijayawada, Andra Pradesh, India
+                                            Fixed Price
                                         </p>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="pr-6 py-4 w-[202px]">
-                                <div>
-                                    <h2
-                                        class="text-xl text-warning-500 font-display font-semibold mb-1.5 text-ellipsis whitespace-nowrap">
-                                        $211.68
-                                    </h2>
-                                    <p class="text-sm font-display text-gray-500 text-ellipsis whitespace-nowrap">
-                                        Fixed Price
-                                    </p>
-                                </div>
-                            </td>
-                            <td class="pr-6 py-4 w-[409px]">
-                                <div>
-                                    <h2 class="text-sm flex gap-1 items-center text-primary-500 font-display font-semibold mb-1.5 text-ellipsis whitespace-nowrap">
-                                        <i class="ph-bold ph-check text-xl leading-5"></i> Active
-                                    </h2>
-                                    <p class="text-sm font-display text-gray-500 text-ellipsis whitespace-nowrap">
-                                        Sold in 15 Sept, 2023
-                                    </p>
-                                </div>
-                            </td>
-                            <td class="pr-6 py-4 w-[309px]">
-                                <div>
+                                </td>
+                                <td class="pr-6 py-4 w-[409px]">
+                                    <div>
+                                        <h2 class="text-sm flex gap-1 items-center text-primary-500 font-display font-semibold mb-1.5 text-ellipsis whitespace-nowrap">
+                                            <i class="ph-bold ph-check text-xl leading-5"></i> Active
+                                        </h2>
+                                        <p class="text-sm font-display text-gray-500 text-ellipsis whitespace-nowrap">
+                                            Sold in 15 Sept, 2023
+                                        </p>
+                                    </div>
+                                </td>
+                                <td class="pr-6 py-4 w-[309px]">
+                                    <div>
 
-                                    <h2
-                                        class="text-gray-900 text-base font-medium font-display mb-1.5 line-clamp- whitespace-nowrap">
-                                        David Lois
-                                    </h2>
-                                </div>
-                            </td>
-                            <td class="pr-6 py-4 w-10">
-                                <button class="favourite-heart transition-all duration-300 w-12 h-12 inline-flex justify-center items-center rounded-md border-2 border-primary-500 text-primary-500">
-                                    <i class="ph-fill ph-heart text-2xl leading-6"></i>
-                                </button>
-                            </td>
-                            <td class="pr-6 py-4 w-[185px]">
-                                <x-frontend.button.secondary-button class="secondary-btn text-primary-500 hover:text-primary-700">
-                                    <span class="text-ellipsis whitespace-nowrap">View Detail</span>
-                                    <i class="ph-bold ph-arrow-right text-xl leading-5"></i>
-                                </x-frontend.button.secondary-button>
-                            </td>
+                                        <h2
+                                            class="text-gray-900 text-base font-medium font-display mb-1.5 line-clamp- whitespace-nowrap">
+                                            David Lois
+                                        </h2>
+                                    </div>
+                                </td>
+                                <td class="pr-6 py-4 w-10">
+                                    <button class="favourite-heart transition-all duration-300 w-12 h-12 inline-flex justify-center items-center rounded-md border-2 border-primary-500 text-primary-500">
+                                        <i class="ph-fill ph-heart text-2xl leading-6"></i>
+                                    </button>
+                                </td>
+                                <td class="pr-6 py-4 w-[185px]">
+                                    <x-frontend.button.secondary-button class="secondary-btn text-primary-500 hover:text-primary-700">
+                                        <span class="text-ellipsis whitespace-nowrap">View Detail</span>
+                                        <i class="ph-bold ph-arrow-right text-xl leading-5"></i>
+                                    </x-frontend.button.secondary-button>
+                                </td>
 
-                        </tr>
-
+                            </tr>
+                        </template>
                     </tbody>
                 </table>
             </div>
-            <pagination />
+            <x-frontend.pagination.pagination-view />
         </div>
     </div>
 </div>

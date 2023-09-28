@@ -12,7 +12,7 @@
                 <input type="radio" hidden checked name="payment-method" id="debit-card" />
                 <label for="debit-card"
                   class="payment-method flex flex-col justify-center items-center cursor-pointer rounded-lg border border-gray-100 absolute top-0 left-0 w-full h-full">
-                  <img :src="PaymentMethod01" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/payment-method-01.png') }}" alt="" />
                   <p>Debit/Credit Card</p>
                 </label>
               </div>
@@ -20,7 +20,7 @@
                 <input type="radio" hidden name="payment-method" id="bank" />
                 <label for="bank"
                   class="payment-method flex flex-col justify-center items-center cursor-pointer rounded-lg border border-gray-100 absolute top-0 left-0 w-full h-full">
-                  <img :src="PaymentMethod02" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/payment-method-02.png') }}" alt="" />
                   <p>Offline/Bank</p>
                 </label>
               </div>
@@ -28,7 +28,7 @@
                 <input type="radio" hidden name="payment-method" id="paypal" />
                 <label for="paypal"
                   class="payment-method flex flex-col justify-center items-center cursor-pointer rounded-lg border border-gray-100 absolute top-0 left-0 w-full h-full">
-                  <img :src="PaymentMethod03" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/payment-method-03.png') }}" alt="" />
                   <p>Paypal</p>
                 </label>
               </div>
@@ -36,7 +36,7 @@
                 <input type="radio" hidden name="payment-method" id="razorpay" />
                 <label for="razorpay"
                   class="payment-method flex flex-col justify-center items-center cursor-pointer rounded-lg border border-gray-100 absolute top-0 left-0 w-full h-full">
-                  <img :src="PaymentMethod04" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/payment-method-04.png') }}" alt="" />
                   <p>Razorpay</p>
                 </label>
               </div>
@@ -44,7 +44,7 @@
                 <input type="radio" hidden name="payment-method" id="paystack" />
                 <label for="paystack"
                   class="payment-method flex flex-col justify-center items-center cursor-pointer rounded-lg border border-gray-100 absolute top-0 left-0 w-full h-full">
-                  <img :src="PaymentMethod05" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/payment-method-05.png') }}" alt="" />
                   <p>Paystack</p>
                 </label>
               </div>
@@ -52,7 +52,7 @@
                 <input type="radio" hidden name="payment-method" id="stripe" />
                 <label for="stripe"
                   class="payment-method flex flex-col justify-center items-center cursor-pointer rounded-lg border border-gray-100 absolute top-0 left-0 w-full h-full">
-                  <img :src="PaymentMethod06" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/payment-method-06.png') }}" alt="" />
                   <p>Stripe</p>
                 </label>
               </div>
@@ -60,7 +60,7 @@
                 <input type="radio" hidden name="payment-method" id="sslcommerz" />
                 <label for="sslcommerz"
                   class="payment-method flex flex-col justify-center items-center cursor-pointer rounded-lg border border-gray-100 absolute top-0 left-0 w-full h-full">
-                  <img :src="PaymentMethod07" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/payment-method-07.png') }}" alt="" />
                   <p>SSLCommerz</p>
                 </label>
               </div>
@@ -68,7 +68,7 @@
                 <input type="radio" hidden name="payment-method" id="instamojo" />
                 <label for="instamojo"
                   class="payment-method flex flex-col justify-center items-center cursor-pointer rounded-lg border border-gray-100 absolute top-0 left-0 w-full h-full">
-                  <img :src="PaymentMethod08" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/payment-method-08.png') }}" alt="" />
                   <p>Instamojo</p>
                 </label>
               </div>
@@ -76,7 +76,7 @@
                 <input type="radio" hidden name="payment-method" id="midtrans" />
                 <label for="midtrans"
                   class="payment-method flex flex-col justify-center items-center cursor-pointer rounded-lg border border-gray-100 absolute top-0 left-0 w-full h-full">
-                  <img :src="PaymentMethod09" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/payment-method-09.png') }}" alt="" />
                   <p>Midtrans</p>
                 </label>
               </div>
@@ -84,7 +84,7 @@
                 <input type="radio" hidden name="payment-method" id="flutterwave" />
                 <label for="flutterwave"
                   class="payment-method flex flex-col justify-center items-center cursor-pointer rounded-lg border border-gray-100 absolute top-0 left-0 w-full h-full">
-                  <img :src="PaymentMethod10" alt="" />
+                  <img src="{{ asset('frontend/assets/images/img/payment-method-10.png') }}" alt="" />
                   <p>Flutterwave</p>
                 </label>
               </div>
@@ -128,10 +128,10 @@
               </form>
             </div>
             <div class="md:flex justify-end" v-if="!payCheckout">
-              <primary-button @click="$emit('completeCheckout')" class="w-full md:w-max">
+              <x-frontend.button.primary-button @click="$emit('completeCheckout')" class="w-full md:w-max">
                 <span>confirm & Checkout</span>
                 <button-arrow />
-              </primary-button>
+              </x-frontend.button.primary-button>
             </div>
           </div>
         </div>

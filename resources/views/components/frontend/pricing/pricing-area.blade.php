@@ -64,9 +64,11 @@
                     </ul>
                 </div>
                 <div class="pricing-card__bottom p-5">
-                    <x-frontend.button.outline-primary class="flex w-full justify-center text-center" @click="$emit('choosePlan')">
-                        Choose Plans <button-arrow />
-                    </x-frontend.button.outline-primary>
+                    <div @click="choosePlan">
+                        <x-frontend.button.outline-primary class="flex w-full justify-center text-center">
+                            Choose Plans <button-arrow />
+                        </x-frontend.button.outline-primary>
+                    </div>
                 </div>
             </div>
             <div
@@ -126,9 +128,11 @@
                     </ul>
                 </div>
                 <div class="pricing-card__bottom p-5">
-                    <x-frontend.button.outline-primary class="flex w-full justify-center text-center" @click="$emit('choosePlan')">
-                        Choose Plans <button-arrow />
-                    </x-frontend.button.outline-primary>
+                    <div @click="choosePlan">
+                        <x-frontend.button.outline-primary class="flex w-full justify-center text-center">
+                            Choose Plans <button-arrow />
+                        </x-frontend.button.outline-primary>
+                    </div>
                 </div>
             </div>
             <div
@@ -188,9 +192,11 @@
                     </ul>
                 </div>
                 <div class="pricing-card__bottom p-5">
-                    <x-frontend.button.outline-primary class="flex w-full justify-center text-center" @click="$emit('choosePlan')">
-                        Choose Plans <button-arrow />
-                    </x-frontend.button.outline-primary>
+                    <div @click="choosePlan">
+                        <x-frontend.button.outline-primary class="flex w-full justify-center text-center">
+                            Choose Plans <button-arrow />
+                        </x-frontend.button.outline-primary>
+                    </div>
                 </div>
             </div>
             <div
@@ -250,9 +256,11 @@
                     </ul>
                 </div>
                 <div class="pricing-card__bottom p-5">
-                    <x-frontend.button.outline-primary class="flex w-full justify-center text-center" @click="$emit('choosePlan')">
-                        Choose Plans <button-arrow />
-                    </x-frontend.button.outline-primary>
+                    <div @click="choosePlan">
+                        <x-frontend.button.outline-primary class="flex w-full justify-center text-center">
+                            Choose Plans <button-arrow />
+                        </x-frontend.button.outline-primary>
+                    </div>
                 </div>
             </div>
         </div>
@@ -261,13 +269,13 @@
                 Don’t want to buy pricing plan, then pay per listing posting.
             </p>
             <x-frontend.button.outline-primary class="whitespace-nowrap text-gray-900 border-gray-900 text-[15px]"
-                @click="$emit('choosePayPlan')">
+                x-on:click="choosePayPlan">
                 Pay per Listing post
             </x-frontend.button.outline-primary>
         </div>
         <div>
-            <img class="w-full object-cover" src="{{ asset('frontend/assets/images/img/advertisement-h.png') }}" alt="">
+            <img class="w-full object-cover" src="{{ asset('frontend/assets/images/img/advertisement-h.png') }}"
+                alt="">
         </div>
     </div>
 </section>
-

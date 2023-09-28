@@ -151,7 +151,7 @@
         </div>
     </div>
 </div>
-@section('scripts')
+@push('component_scripts')
 <script>
     document.addEventListener('alpine:init', () => {
         Alpine.data('data', () => ({
@@ -167,7 +167,7 @@
         }))
     })
 </script>
-@endsection
+@endpush
 {{-- <script>
     import DoubleArrow from "../Icons/DoubleArrow.vue";
     import active01 from "../../assets/images/img/active-list-01.png";
