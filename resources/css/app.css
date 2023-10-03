@@ -363,9 +363,12 @@ body {
   height: auto;
   transform: translateY(12px);
 }
+.swiper-slide.cat-item {
+    display: inline-block;
+    width: max-content;
+}
 
 /* responsive css */
-
 @media (max-width: 375px) {
   .logo-text {
     display: none;

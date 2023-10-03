@@ -54,7 +54,7 @@
         <x-frontend.dashboard.payper-post.step-two />
     </div>
     <div x-cloak x-show="payCheckout">
-        <x-frontend.dashboard.payper-post.payper-checkout />
+        <x-frontend.dashboard.payper-post.step-complete />
     </div>
     <div x-cloak x-show="publishedPost">
         <x-frontend.dashboard.payper-post.published-post />

@@ -8,3 +8,8 @@
     });
 // }(jQuery));
 
+
+var swiper = new Swiper(".headerCategory", {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+    });

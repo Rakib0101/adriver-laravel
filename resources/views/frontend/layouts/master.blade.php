@@ -13,6 +13,7 @@
 
     <!-- Include Select2 CSS -->
     <link href="{{ asset('frontend/assets/plugins/select2/select2.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('frontend/assets/plugins/swiper/swiper.min.css') }}" rel="stylesheet" />
 
     {{-- <link href="{{ asset('frontend/assets/plugins/phosphoric-icon/phosphoric-icon.css') }}" rel="stylesheet" /> --}}
     @vite(['resources/css/tailwind.css', 'resources/css/app.css', 'resources/js/app.js', 'resources/js/custom.js'])
@@ -28,7 +29,8 @@
     <!-- Include jQuery (required for Select2) -->
     <script src="{{ asset('frontend/assets/plugins/jquery/jquery.min.js') }}"></script>
     <!-- Include Select2 JavaScript -->
-    <script defer src="{{ asset('frontend/assets/plugins/select2/select2.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/plugins/select2/select2.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/plugins/swiper/swiper.min.js') }}"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     @yield('scripts')
 </body>

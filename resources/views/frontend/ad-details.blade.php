@@ -231,42 +231,8 @@
 @endsection
 @section('styles')
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> --}}
     <style>
-        .swiper {
-            width: 100%;
-            height: 648px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .swiper-button-next::after,
-        .swiper-button-prev::after {
-            background-color: white;
-            color: #636a60;
-            padding: 12px;
-            font-size: 24px;
-        }
-
-        .swiper-button-next {
-            right: 20px;
-            left: auto;
-            top: auto !important;
-            bottom: 20px;
-        }
-
-        .swiper-button-prev {
-            right: 50px;
-            left: auto;
-            top: auto !important;
-            bottom: 20px;
-        }
-
-        .swiper-slide {
-            background-size: cover;
-            background-position: center;
-        }
-
         .mySwiper2 {
             height: 648px;
             width: 100%;
@@ -284,7 +250,7 @@
             }
         }
 
-        .mySwiper {
+        .swiper.mySwiper {
             height: 108px;
             box-sizing: border-box;
             padding: 10px 0;
@@ -305,18 +271,17 @@
             border-radius: 6px;
         }
 
-        .swiper-slide img {
+        .mySwiper .swiper-slide img {
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .swiper-slide {
+        .mySwiper .swiper-slide {
             text-align: center;
             font-size: 18px;
             background: #fff;
-
             /* Center slide text vertically */
             display: -webkit-box;
             display: -ms-flexbox;
@@ -332,7 +297,7 @@
             align-items: center;
         }
 
-        .swiper-slide img {
+        .mySwiper .swiper-slide img {
             display: block;
             width: 100%;
             height: 100%;
@@ -362,7 +327,7 @@
 @endsection
 @section('scripts')
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> --}}
 
     <!-- Initialize Swiper -->
     <script>
