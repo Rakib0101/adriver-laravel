@@ -50,3 +50,15 @@ Route::get('/blog', function () {
 Route::get('/blog-details', function () {
     return view('frontend.inner-pages.blog-details');
 });
+Route::get('/error-page', function () {
+    return view('frontend.inner-pages.error');
+});
+Route::get('/not-found', function () {
+    return view('frontend.inner-pages.not-found');
+});
+Route::get('/coming-soon', function () {
+    return view('frontend.inner-pages.coming-soon');
+});
+Route::get('/faqs', function () {
+    return view('frontend.inner-pages.faqs');
+});
