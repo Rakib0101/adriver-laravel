@@ -1,13 +1,8 @@
-<template>
+@extends('frontend.layouts.master')
+
+@section('content')
   <div>
-    <header-component />
-    <Breadcrumb
-      :links="[
-        { label: '', url: '#' },
-        { label: 'Support', url: '#' },
-      ]"
-      :title="'Terms & Conditions'"
-    />
+    <x-frontend.breadcrumb.breadcrumb-view label='Home' url='#' title="Blog List" />
     <div class="pt-[72px]">
       <div class="container">
         <div class="flex justify-between">
@@ -293,13 +288,4 @@
     </div>
     <footer-component />
   </div>
-</template>
-<script setup>
-import HeaderComponent from "../../components/Header/HeaderComponent.vue";
-import Breadcrumb from "../../components/Breadcrumb/Breadcrumb.vue";
-import BreadcrumbArrow from "../../components/Icons/BreadcrumbArrow.vue";
-import FooterComponent from "../../components/FooterComponent.vue";
-import InputField from "../../components/CustomInput/InputField.vue";
-import SearchLg from "../../components/Icons/SearchLg.vue";
-import GoogleAd from "../../assets/images/img/advertisement.png";
-</script>
+@endsection

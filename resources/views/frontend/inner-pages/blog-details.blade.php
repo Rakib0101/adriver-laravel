@@ -2,7 +2,7 @@
 
 @section('content')
     <div x-data>
-        <x-frontend.breadcrumb.breadcrumb-view label='Home' url='#' title="Blog List" />
+        <x-frontend.breadcrumb.breadcrumb-view label='Home' url='#' title="Blog Details" />
         <div class="py-14">
             <div class="container">
                 <div class="flex lg:flex-row lg:justify-between flex-col gap-6">

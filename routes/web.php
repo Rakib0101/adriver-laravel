@@ -50,6 +50,18 @@ Route::get('/blog', function () {
 Route::get('/blog-details', function () {
     return view('frontend.inner-pages.blog-details');
 });
+Route::get('/support-center', function () {
+    return view('frontend.inner-pages.support-center');
+});
+Route::get('/support-detail', function () {
+    return view('frontend.inner-pages.support-details');
+});
+Route::get('/privacy-policy', function () {
+    return view('frontend.inner-pages.privacy-policy');
+});
+Route::get('/terms-condition', function () {
+    return view('frontend.inner-pages.terms-condition');
+});
 Route::get('/error-page', function () {
     return view('frontend.inner-pages.error');
 });

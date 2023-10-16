@@ -1,20 +1,3 @@
-{{-- <script setup>
-import SearchLg from "../../Icons/SearchLg.vue";
-import LocationIcon from "../../Icons/LocationIcon.vue";
-import TagIcon from "../../Icons/TagIcon.vue";
-import TargetIcon from "../../Icons/TargetIcon.vue";
-import MapIcon from "../../Icons/MapIcon.vue";
-import Multiselect from "@vueform/multiselect";
-import "@vueform/multiselect/themes/default.css";
-
-import { ref } from "vue";
-
-const isFocused = ref(false);
-const value = ref(null);
-const options = ["Popular", "Trending", "Latest"];
-const options2 = ["Category 1", "Category 2", "Category 3"];
-</script> --}}
-
 <div class="mb-6">
     <div
         class="lg:shadow-[0px_12px_32px_rgba(23,30,21,0.05)] shadow-[0px_3px_14px_rgba(23,30,21,0.03)] border border-gray-100 rounded-lg lg:py-[11px] lg:pr-3 lg:pl-1 flex justify-between flex-col mb-5">
