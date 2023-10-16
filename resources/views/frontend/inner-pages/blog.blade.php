@@ -42,7 +42,7 @@
                         <x-frontend.inner-pages.blog.blog-filter />
                         <div class="grid gap-6 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 place-items-center">
                             <template x-for="item in 9">
-                                <x-frontend.inner-pages.blog.blog-card href="'/blog-detail'" category="Travel"
+                                <x-frontend.inner-pages.blog.blog-card href="blog-details" category="Travel"
                                     title="In 1911, a genius revealed a forgotten science of how to be 50x more productive without"
                                     excerpt="Drucker isn’t just talking about 50x productivity for the smartest people. He’s talking about 50x productivity on average for an entire society." />
                             </template>
