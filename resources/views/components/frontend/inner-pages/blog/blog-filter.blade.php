@@ -16,48 +16,54 @@ const options2 = ["Category 1", "Category 2", "Category 3"];
 </script> --}}
 
 <div class="mb-6">
-    <div :class="isFocused
-        ?
-        'shadow-[0px_8px_24px_rgba(88,179,43,0.12)] border border-primary-500' :
-        'shadow-[0px_3px_14px_rgba(23,30,21,0.03)] border border-gray-100'"
-        for="search-filter"
-        class="lg:shadow-[0px_12px_32px_rgba(23,30,21,0.05)] rounded-lg lg:py-[11px] lg:pr-3 lg:pl-1 flex justify-between flex-col mb-5">
+    <div
+        class="lg:shadow-[0px_12px_32px_rgba(23,30,21,0.05)] shadow-[0px_3px_14px_rgba(23,30,21,0.03)] border border-gray-100 rounded-lg lg:py-[11px] lg:pr-3 lg:pl-1 flex justify-between flex-col mb-5">
         <div class="flex justify-between lg:border-none border-b border-gray-100">
             <div class="relative lg:flex hidden lg:max-w-[456px] w-full">
                 <label for="search-filter" class="absolute top-3 left-[18px]">
-                    <search-lg />
+                    <i class="ph ph-magnifying-glass text-2xl leading-6"></i>
                 </label>
                 <input type="text" placeholder="Search for anything..." id="search-filter"
-                    class="py-3 pl-[54px] max-w-[456px] w-full block focus:outline-none" @focus="isFocused = true"
-                    @blur="isFocused = false" />
+                    class="py-3 pl-[54px] max-w-[456px] w-full block focus:outline-none" />
             </div>
             <div
                 class="relative lg:flex hidden gap-3 items-center lg:max-w-[312px] w-full border-r border-l border-gray-100 px-[18px]">
                 <!-- <tag-icon /> -->
-                <Multiselect class="list-type" placeholder="Select category..." v-model="value"
-                    :options="options2" />
+                <select class="relative !w-full sorting-select select2" placeholder="Sort By :">
+                    <option value="option1">Select Category</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
             </div>
             <div
                 class="relative lg:flex hidden gap-3 items-center lg:max-w-[312px] w-full border-r border-l border-gray-100 px-[18px]">
                 <!-- <tag-icon /> -->
-                <Multiselect class="list-type" placeholder="Sort by: " v-model="value" :options="options" />
+                <select class="relative !w-full sorting-select select2" placeholder="Sort By :">
+                    <option value="option1">Sort By</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
             </div>
             <button
                 class="lg:inline-flex hidden gap-2 text-white max-h-12 text-base leading-[48px] rounded-md items-center px-5 bg-primary-500 hover:bg-primary-700 transition-all duration-300">
-                <search-lg />
+                <i class="ph ph-magnifying-glass text-2xl leading-6"></i>
                 <span>Search</span>
             </button>
         </div>
         <div class="relative flex w-full border-b border-gray-100 lg:hidden">
             <label for="search-filter" class="absolute top-3 left-[18px]">
-                <search-lg />
+                <i class="ph ph-magnifying-glass text-2xl leading-6"></i>
             </label>
             <input type="text" placeholder="Search for anything..." id="search-filter"
                 class="py-3 pl-[54px] w-full block focus:outline-none" />
         </div>
         <div class="relative flex lg:hidden gap-3 items-center w-full px-[18px]">
             <!-- <tag-icon /> -->
-            <Multiselect class="list-type" placeholder="Sort by: " v-model="value" :options="options" />
+            <select class="relative !w-full sorting-select select2" placeholder="Sort By :">
+                <option value="option1">Sort By</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
         </div>
     </div>
     <div>

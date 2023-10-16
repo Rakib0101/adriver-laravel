@@ -3,21 +3,21 @@
   >
     <div class="w-full h-[248px]">
       <img
-        :src="BlogCard01"
+        src="{{ asset('frontend/assets/images/img/blog-card-01.png') }}"
         alt=""
         class="w-full h-full rounded-lg object-cover"
       />
     </div>
-    <div class="p-5">
-      <p class="flex gap-1.5 items-center text-sm text-gray-700 mb-1.5">
-        <a href="{{$href}}" class="inline-flex gap-1.5 items-center text-blue-500">
-          <layers-icon />
-          <p class="font-medium">{{ $category }}</p>
-        </a>
+    <div class="pt-5">
+      <p class="flex flex-wrap gap-1.5 items-center text-sm text-gray-700 mb-1.5">
+        <span class="inline-flex gap-1.5 items-center text-blue-500">
+          <i class="ph-fill ph-stack text-2xl"></i>
+          <span class="font-medium">{{ $category }}</span>
+        </span>
         <span class="text-gray-300">•</span>
-        <span>19 secs ago</span>
+        <span class="whitespace-nowrap">19 secs ago</span>
         <span class="text-gray-300">•</span>
-        <span>7 min read</span>
+        <span class="whitespace-nowrap">7 min read</span>
       </p>
       <h2
         class="mb-3 text-xl text-gray-900 font-medium font-display line-clamp-2"
@@ -28,11 +28,10 @@
         {{ $excerpt }}
       </p>
       <div>
-        <a
-          href="{{$href}}"
+        <span
           class="inline-flex gap-1.5 items-center text-base text-primary-500 font-display font-medium"
           >Read More <arrow-double
-        /></a>
+        /></span>
       </div>
     </div>
   </a>

@@ -82,7 +82,7 @@
 @section('scripts')
     <script>
         // Set the target date for the countdown (replace with your target date)
-        const targetDate = new Date('2023-10-15T00:00:00Z');
+        const targetDate = new Date('2023-11-15T00:00:00Z');
 
         function updateCountdown() {
             const now = new Date();
